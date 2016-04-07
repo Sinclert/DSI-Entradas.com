@@ -3,19 +3,22 @@ html, body{
 	margin: 0;
   	padding: 0;
   	min-width:1080px;
-  	background-color:#1D2F81;
+  	background-color:#D8D8D8;
 }
 
 .comunidad
 {
-  color:#CAA729;
-  font-size:130%;
+  color:#FFAB00;
+  font-size:120%;
+  font-family: 'Verdana', arial;
 }
 
 .provincia{
 	color:#FCDB02;
 	margin-bottom:5px;
 	cursor: pointer;
+	font-family: 'Verdana', arial;
+	font-size:90%;
 }
 
 .provincia:hover{
@@ -30,24 +33,27 @@ a {
 	text-align:center;
 	position:relative;
 	top:10px;
-	font-family: 'Wallpoet', cursive;
+	font-family: 'Verdana', arial;
 	font-size:175%;
-	color:#FCDB02;
+	color:#132672;
+	text-shadow: 3px 3px 5px #848484;
 }
 
 #seleccion{
 	width:40%;
 	height:92%;
-	background-color:#3050DC;
+	background-color:#132672;
 	margin: 0 auto;
+	margin-top:30px;
 	border-radius:10px;
+	box-shadow: 8px 8px 15px 5px #848484;
 }
 
 #seleccion1{
 	position:relative;
 	text-align:center;
 	float:left;
-	margin-left:130px;
+	margin-left:115px;
 	margin-top:15px;
 }
 
@@ -55,6 +61,6 @@ a {
 	position:relative;
 	text-align:center;
 	float:left;
-	margin-left:180px;
+	margin-left:150px;
 	margin-top:15px;
 }

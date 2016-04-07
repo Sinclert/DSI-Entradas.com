@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="mainpage2.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="scripts/jquery.slider.js"></script>
+	
+	<title>Página Principal</title>
+	<meta charset="UTF8">
+</head>
+<body>
+	<div class="header">
+		<div id="logoentradas">
+			<a href="mainpage.html">
+				<img id="logo1entradas" src="logoentradas.png" alt="La imagen no pudo cargarse.">
+			</a>
+		</div>
+		<div class="botonRegistro">
+			<button class ="reg" type="button">Regístrate</button>
+		</div>
+		<div class="botonInicio">
+			<button class ="ini" type="button">Inicia Sesión</button>
+		</div>
+	</div>
+
+	<div class="buscador">
+		<div id="barrabusqueda">
+			 <form id="formulario" accept-charset="utf-8" action="enconstruccion.html">
+			    <div id="filtrobox">
+			     	<select id="filtro">
+			      		<option selected="selected" value="sinfiltro">Sin filtro</option>
+			        	<option value="estrenos">Estrenos</option>
+			        	<option value="novedades">Novedades</option>
+			        	<option value="cine">Cine</option>
+			        	<option value="teatro">Teatro</option>
+			        	<option value="pelicula">Película</option>
+			        	<option value="concierto">Concierto</option>
+			        	<option value="deporte">Deporte</option>
+			        	<option value="otros">Otros</option>
+			      	</select>
+			    </div>
+			    <div id="textobusqueda">
+			    	  <input type="text" id="texto" value="" autocomplete="off"/>
+			    </div>
+			    <div id="botonbusqueda">
+			      	<input type="image" src="iconobusqueda2.png" id="boton"/>
+			    </div>
+			 </form>
+		</div>	
+	</div>
+
+	<div class="menu">
+		<table id="menu">
+			<tr>
+				<td class="menucell"><a href="bookstore.html">Cines</a></td>
+				<td><a href="bookstore.html">Musicales y Shows</a></td>
+				<td><a href="bookstore.html">Teatros</a></td>
+				<td><a href="bookstore.html">Conciertos</a></td>
+				<td><a href="bookstore.html">Deportes</a></td>
+				<td><a href="bookstore.html">Infantil y Familiar</a></td>
+				<td><a href="bookstore.html">Exposiciones</a></td>
+				<td><a href="bookstore.html">Promociones especiales</a></td>
+			</tr>
+		</table>
+	</div>
+
+</body>

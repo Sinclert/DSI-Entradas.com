@@ -3,18 +3,18 @@ html, body{
 	margin: 0;
   	padding: 0;
   	min-width:1080px;
-  	background-color:#D8D8D8;
+  	background-color:#132672;
 }
 
 .comunidad
 {
-  color:#FCDB02;
+  color:#000000;
   font-size:120%;
   font-family: 'Verdana', arial;
 }
 
 .provincia{
-	color:#FFFFFF;
+	color:#222D6F;
 	margin-bottom:5px;
 	cursor: pointer;
 	font-family: 'Verdana', arial;
@@ -35,18 +35,18 @@ a {
 	top:10px;
 	font-family: 'Verdana', arial;
 	font-size:175%;
-	color:#132672;
-	text-shadow: 3px 3px 5px #848484;
+	color:#FCDB02;
+	text-shadow: 3px 3px 5px #131835;
 }
 
 #seleccion{
 	width:40%;
 	height:92%;
-	background-color:#222D6F;
+	background-color:#F2F2F2;
 	margin: 0 auto;
 	margin-top:30px;
 	border-radius:10px;
-	box-shadow: 8px 8px 15px 5px #848484;
+	box-shadow: 8px 8px 15px 5px #131835;
 }
 
 #seleccion1{

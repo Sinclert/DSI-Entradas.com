@@ -24,14 +24,14 @@ $(document).ready(function () {
 
 
 function show_login() {
-    $("#register").hide()
-    $("#login").show()
+    $("#register").hide();
+    $("#login").show();
     document.body.style.filter = "blur(1px)";
 }
     
 function show_register() {
-    $("#login").hide()
-    $("#register").show()
+    $("#login").hide();
+    $("#register").show();
     document.body.style.filter = "blur(1px)";
 }
 

@@ -15,9 +15,12 @@
 
     
     <body>
-        <a onclick = "show_register();" href="#"> Register </a>
-        <a onclick = "show_login();" href="#"> Login </a>
-
+        
+        <div id = "main">
+            <a onclick = "show_register();" href="#"> Register </a>
+            <a onclick = "show_login();" href="#"> Login </a>
+        </div>
+        
         <div class = "box" id="login">
 
             <h2>Iniciar Sesión</h2> <!-- PARA VERIFICAR SI ESTOS DATOS SON CORRECTOS SE UTILIZARIA BACKEND -->
@@ -69,7 +72,6 @@
               value="Regístrate" onclick="validate_r()" class="btn"> <!-- VALIDATE_R HACE REFERENCIA A UNA FUNCION DE JAVASCRIPT QUE VA A VERIFICAR QUE EL FORMATO DE LOS CAMPOS ES EL CORRECTO, -->
             
         </div>
-
     </body>
     
 </html>

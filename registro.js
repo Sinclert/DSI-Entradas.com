@@ -11,12 +11,12 @@ $(document).ready(function () {
         
         if (!login.is(e.target) && login.has(e.target).length == 0 && login.is(":visible")){
             login.hide();
-            document.body.style.filter = "blur(0px)";
+            $("#main").css("filter", "none");
         }
         
         if (!register.is(e.target) && register.has(e.target).length == 0 && register.is(":visible")){
             register.hide();
-            document.body.style.filter = "blur(0px)";
+            $("#main").css("filter", "none");
         }
         
     }); 
@@ -26,13 +26,13 @@ $(document).ready(function () {
 function show_login() {
     $("#register").hide();
     $("#login").show();
-    document.body.style.filter = "blur(1px)";
+    $("#main").css("filter", "blur(1px)");
 }
     
 function show_register() {
     $("#login").hide();
     $("#register").show();
-    document.body.style.filter = "blur(1px)";
+    $("#main").css("filter", "blur(1px)");
 }
 
 

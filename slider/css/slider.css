@@ -1,0 +1,100 @@
+.sac {
+	display:block;
+	width:100%;
+	text-align:right;
+	font-style:italic;
+	margin-bottom:45px;
+	font-size:12px;
+}
+
+pre, blockquote {
+	-moz-border-radius:10px 10px 10px 10px;
+	-webkit-border-radius:10px 10px 10px 10px;
+	border-radius:10px 10px 10px 10px;
+	background-color:#DFE7DD;
+	margin:15px 0;
+	padding:15px;
+}
+
+pre, code {
+	font-family:monospace;
+	font-size:12px;
+}
+
+.liquid {
+	background:#313b31 url('../images/bodybackground.png') repeat-y scroll 50% 0;
+	border:2px solid #19301C;
+	-moz-border-radius:10px 10px 10px 10px;
+	-webkit-border-radius:10px 10px 10px 10px;
+	border-radius:10px 10px 10px 10px;
+	padding:10px 0;
+}
+.liquid .previous {
+	display:block;
+	height:126px;
+	width:64px;
+	background-image:url('../images/previous.png');
+	float:left;
+	margin:0;
+	padding:0;
+}
+.liquid .next {
+	display:block;
+	height:126px;
+	width:64px;
+	background-image:url('../images/next.png');
+	float:right;
+	margin:0;
+	padding:0;
+}
+.liquid ul li {
+	width:126px;
+	padding:0 2px;
+	margin:0;
+}
+.liquid ul li a img {
+	-moz-box-shadow: 5px 5px 3px #222;
+   	-webkit-box-shadow: 5px 5px 3px #222;
+   	box-shadow: 5px 5px 3px #222;
+}
+
+
+#f1_container {
+  position: relative;
+  margin: 0;
+  width: 88;
+  height: 126;
+  z-index: 1;
+}
+#f1_container {
+  perspective: 1000;
+}
+#f1_card {
+  width: 88;
+  height: 126;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+  box-shadow: -5px 5px 5px #aaa;
+}
+.face {
+  position: absolute;
+  width: 88;
+  height: 126;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  position: absolute;
+  transform: rotateY(180deg);
+  width: 88;
+  height: 126;
+  padding: 5;
+  color: black;
+  text-align: left;
+  font-size:14px;
+  background-color: grey;
+}
+

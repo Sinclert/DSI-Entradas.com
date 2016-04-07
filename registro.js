@@ -3,17 +3,38 @@
 */
 
 
-function show_register() {
-	document.getElementById('login').style.display = "none"; //ocultar login en caso de que se estuviera mostrando
-  document.body.style.backgroundColor = "gray"; //ocurecer fondo NO OSCURECE TODO, SOLO FONDO, INVESTIGAR
-	document.getElementById('register').style.display = "block"; //mostrar register
-}
+$(document).ready(function () {
+    
+    $(document).mouseup(function (e){
+        var login = $("#login");
+        var register = $("#register");
+        
+        if (!login.is(e.target) && login.has(e.target).length == 0 && login.is(":visible")){
+            login.hide();
+            document.body.style.filter = "blur(0px)";
+        }
+        
+        if (!register.is(e.target) && register.has(e.target).length == 0 && register.is(":visible")){
+            register.hide();
+            document.body.style.filter = "blur(0px)";
+        }
+        
+    }); 
+});
+
 
 function show_login() {
-	document.getElementById('register').style.display = "none"; //ocultar register en caso de que se estuviera mostrando
-  document.body.style.backgroundColor = "gray"; //ocurecer fondo  NO OSCURECE TODO, SOLO FONDO, INVESTIGAR
-	document.getElementById('login').style.display = "block"; //mostrar login
+    $("#register").hide()
+    $("#login").show()
+    document.body.style.filter = "blur(1px)";
 }
+    
+function show_register() {
+    $("#login").hide()
+    $("#register").show()
+    document.body.style.filter = "blur(1px)";
+}
+
 
 //function validate_l() {
   // Variable definition

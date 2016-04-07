@@ -1,22 +1,22 @@
 /* Done by:
 	DSI PROJECT GROUP NUMBER 4
 */
-body{
-	margin: 0;
-	padding: 0;
-  background-color: white;
+body {
+    background-color: lightblue;
 }
 
 div li {
-	list-style-type: none;
-  margin-top: 0.75%;
-  margin-bottom: 0.75%;
-  margin-left: 5%;
+    white-space: nowrap;
+    list-style-type: none;
+    margin-top: 0.75%;
+    margin-bottom: 0.75%;
+    margin-left: 5%;
 }
 
+
 div ul {
-  padding: 0;
-  list-style-type: none;
+    padding: 0;
+    list-style-type: none;
 }
 
 h2 {
@@ -25,7 +25,8 @@ h2 {
 
 .box {
 	float: left;
-	margin-left: 20%;
+	margin-left: 30%;
+    margin-right: 30%;
 	width: 40%;
     height: auto;
     margin-top: 20%;
@@ -39,39 +40,37 @@ h2 {
     position: absolute;
 }
 
-input[type="password"],
-input[type="email"],
-input[type="text"] {
-  background: transparent;
-  border-width: thin;
-  border-color: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  border-left: 1%;
-  border-right: 1%;
-  resize: none;
-  width: 50%;
-  padding-left: 7%;
-  margin-right: 5%;
-  float: right;
+input[type="password"], input[type="email"], input[type="text"] {
+    background: transparent;
+    border-width: thin;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border-left: 1%;
+    border-right: 1%;
+    width: 50%;
+    margin-right: 5%;
+    float: right;
 }
 
 .btn {
-  background:#22a3f5;
-  border-radius:4px;
-  cursor:pointer;
-  font-size:13px;
-  font-weight:bold;
-  padding:4px 10px;
-  text-decoration:none;
-  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  margin-left: 40%;
-  margin-bottom: 2%;
-  color: white;
+    background:#22a3f5;
+    border-radius:4px;
+    cursor:pointer;
+    font-size:13px;
+    font-weight:bold;
+    padding:4px 10px;
+    text-decoration:none;
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    margin-left: 40%;
+    margin-bottom: 2%;
+    color: white;
 }
+
 .btn:hover {
-  background-color:#476e9e;
+    background-color:#476e9e;
 }
+
 .btn:active {
-  position:relative;
-  top:1px;
+    position:relative;
+    top:1px;
 }

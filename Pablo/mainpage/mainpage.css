@@ -1,0 +1,73 @@
+body {
+	margin: 0px;
+	background-color: #cccccc;
+	font_family: "Verdana";
+	width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#logoentradas{
+	position:absolute;
+	float:left;
+	margin-left:20px;
+	width:170px;
+	height:70px;
+}
+
+#logo1entradas{
+	width:170px;
+	height:70px;
+}
+
+.header {
+	background-color: #002b55;
+	width: 1024px;
+	height: 150px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.slidertable{
+	margin-top: 20px;
+	margin-left: 10px;
+	width: 1024px;
+	height: 287px;
+	background-color: #021b2f;
+}
+
+/*Defines the characteristics of the cell in the middle, which is the place where slides appear, */
+.slider {
+  text-align: center;
+  position: center;
+  width: 800px;
+}
+/*Defines the div: background, size, and text specificatons. */
+.slider div {
+  background-color: none;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  display: none;
+  color: black;
+	margin:auto;
+}
+/*Defines the size of the images appearing in the div. */
+.slider img {
+  width: 800px;
+  height: 289px;
+	margin: auto;
+}
+/*Sets no border and no background for the table data of the .slider table. */
+.slider, td{
+	border:none;
+	background-color: none;
+	margin: auto;
+}
+
+/*Sets the size of the arrows*/
+#arrow{
+	width: 20px;
+	height: 20px;
+}

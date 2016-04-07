@@ -24,10 +24,9 @@ h2 {
 }
 
 .box {
-	float: left;
-	margin-left: 30%;
-    margin-right: 30%;
-	width: 40%;
+	margin-left: auto;
+    margin-right: auto;
+	width: 500px;
     height: auto;
     margin-top: 20%;
     border-color: rgba(0, 0, 0, 0.5);
@@ -37,7 +36,6 @@ h2 {
     -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     display: none;
     background-color: white;
-    position: absolute;
 }
 
 input[type="password"], input[type="email"], input[type="text"] {

@@ -49,9 +49,6 @@
 						<b> Género:</b>  Acción, Aventura, Ciencia Ficción <br>
 						<b> Calificación: </b> Más de 13 años
 					</p>
-					<a href="http://cine.entradas.com/entradas/selEntradasNoNumCine.do">
-						<input type="button" name="submitbtn" id="sbmt" class="btn" value="Comprar Entradas" onclick="validate_l()"> 
-					</a>
 
 				</div>
 				<div id="sinopsis">
@@ -64,9 +61,29 @@
 
 			</div>
 
+			<div id="elegirCine">
+				<select id="Seleccionar Cine">
+        			<option selected="selected" value="seleccionar">Seleccionar cine</option>
+        			<option value="estrenos">Yelmo Cines - Tresaguas</option>
+        			<option value="novedades">Yelmo Cines - Planetocio</option>
+        			<option value="cine">Yelmo Cines - Isla Azul</option>
+        			<option value="teatro">Yelmo Cines - Plenilunio</option>
+        			<option value="pelicula">Yelmo Cines - Rivas Futura</option>
+        			<option value="concierto">Yelmo Cines - Plaza Norte 2</option>
+      			</select>
+
+      			<a href="http://cine.entradas.com/entradas/selEntradasNoNumCine.do">
+					<input type="button" name="submitbtn" id="sbmt" class="btn" value="Comprar Entradas" onclick="validate_l()"> 
+				</a>
+			</div>
+
 			<div id="imagenes">
 
-				<img id="im" src="Imagenes/bruja.jpg" alt="film img" width="160" height="259">
+				<h2> Galería de imágenes </h2>
+				<hr>
+				<img id="im"  class="thumbnail" src="Imagenes/bruja.jpg" alt="film img" width="160" height="259">
+				<img id="im"  class="thumbnail" src="Imagenes/poster.jpg" alt="film img" width="160" height="259">
+				<hr>
 
 			</div>
 

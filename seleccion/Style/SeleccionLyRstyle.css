@@ -1,13 +1,9 @@
 html, body{
-	height:100%;
-	margin: 0;
-  	padding: 0;
-  	min-width:1080px;
-  	background-color:#D8D8D8;
+    background-color:#D8D8D8;
+  	min-width:500px;
 }
 
-.comunidad
-{
+.comunidad{
   color:#FCDB02;
   font-size:120%;
   font-family: 'Verdana', arial;
@@ -31,7 +27,6 @@ a {
 
 #txthead{
 	text-align:center;
-	position:relative;
 	top:10px;
 	font-family: 'Verdana', arial;
 	font-size:175%;
@@ -40,27 +35,22 @@ a {
 }
 
 #seleccion{
-	width:40%;
-	height:92%;
+    width: 500px;
 	background-color:#222D6F;
 	margin: 0 auto;
-	margin-top:30px;
+	margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 	border-radius:10px;
 	box-shadow: 8px 8px 15px 5px #848484;
 }
 
 #seleccion1{
-	position:relative;
 	text-align:center;
-	float:left;
-	margin-left:115px;
 	margin-top:15px;
 }
 
 #seleccion2{
-	position:relative;
 	text-align:center;
-	float:left;
-	margin-left:150px;
 	margin-top:15px;
 }

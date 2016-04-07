@@ -184,15 +184,18 @@ select option {
 	margin-top: 20px;
 	margin-left: 10px;
 	width: 1024px;
-	height: 287px;
+	height: 318px;
 	background-color: #021b2f;
+	padding: 0;
 }
 
 /*Defines the characteristics of the cell in the middle, which is the place where slides appear, */
 .slider {
   text-align: center;
   position: center;
-  width: 800px;
+  width: 810px;
+	padding: 0;
+	margin: 0;
 }
 /*Defines the div: background, size, and text specificatons. */
 .slider div {
@@ -203,18 +206,20 @@ select option {
   display: none;
   color: black;
 	margin:auto;
+	padding: 0;
 }
 /*Defines the size of the images appearing in the div. */
 .slider img {
-  width: 800px;
-  height: 289px;
-	margin: auto;
+  width: 810px;
+  height: 318px;
+	padding: 0;
 }
 /*Sets no border and no background for the table data of the .slider table. */
 .slider, td{
 	border:none;
 	background-color: none;
 	margin: auto;
+	padding: 0;
 }
 
 /*Sets the size of the arrows*/

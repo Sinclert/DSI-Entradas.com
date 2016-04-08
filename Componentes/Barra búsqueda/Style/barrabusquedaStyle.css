@@ -1,0 +1,55 @@
+#barrabusqueda{
+	margin: 0 auto;
+	width:400px;
+}
+
+#boton{
+	background-image:url(C:\Users\JeroS\Desktop\barrabusqueda\Imagenes\iconobusqueda2.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:#132672;
+	border:none;
+	text-decoration:none;
+	margin-left:-2px;
+	height:32px;
+	width:32px;
+}
+
+#filtrobox{
+	z-index: +1;
+	float:left;
+}
+
+#filtro{
+	margin-top:-1px;
+	height:34px;
+    line-height:23px;
+    background-color:#132672;
+    color:#FFFFFF;
+    font-family: 'Verdana', arial;
+}
+
+#textobusqueda{
+	position:relative;
+	float:left;
+	margin-left:-2px;
+	width:30%;
+}
+
+#botonbusqueda{
+	position:relative;
+	float:right;
+}
+
+#texto{
+	font-family: 'Verdana', arial;
+	width:277px;
+	height:26px;
+}
+
+select option {
+    margin:40px;
+    background-color:#132672;
+    color:#fff;
+    text-shadow:0 1px 0 rgba(0,0,0,0.4);
+}

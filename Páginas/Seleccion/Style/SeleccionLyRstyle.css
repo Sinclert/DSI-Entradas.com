@@ -1,0 +1,56 @@
+html, body{
+    background-color:#D8D8D8;
+  	min-width:500px;
+}
+
+.comunidad{
+  color:#FCDB02;
+  font-size:120%;
+  font-family: 'Verdana', arial;
+}
+
+.provincia{
+	color:#FFFFFF;
+	margin-bottom:5px;
+	cursor: pointer;
+	font-family: 'Verdana', arial;
+	font-size:90%;
+}
+
+.provincia:hover{
+	color:#FF0000;
+}
+
+a {
+	text-decoration:none;
+}
+
+#txthead{
+	text-align:center;
+	top:10px;
+	font-family: 'Verdana', arial;
+	font-size:175%;
+	color:#132672;
+	text-shadow: 3px 3px 5px #848484;
+}
+
+#seleccion{
+    width: 500px;
+	background-color:#222D6F;
+	margin: 0 auto;
+	margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	border-radius:10px;
+	box-shadow: 8px 8px 15px 5px #848484;
+}
+
+#seleccion1{
+	text-align:center;
+	margin-top:15px;
+}
+
+#seleccion2{
+	text-align:center;
+	margin-top:15px;
+}

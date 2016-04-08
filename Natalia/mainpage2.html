@@ -4,7 +4,6 @@
 	<link rel="stylesheet" type="text/css" href="mainpage2.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="scripts/jquery.slider.js"></script>
 
 	<title>Página Principal</title>
 	<meta charset="UTF8">
@@ -17,7 +16,7 @@
 			</a>
 		</div>
 		<div class="botonRegistro">
-			<button class ="reg" type="button" href="DSI-Project-master/Registro/registro.html">Regístrate</button>
+			<button class ="reg" type="button" href="../Registro/registro.html">Regístrate</button>
 		</div>
 		<div class="botonInicio">
 			<button class ="ini" type="button">Inicia Sesión</button>
@@ -53,25 +52,26 @@
 	<div class="menu">
 		<table id="menu">
 			<tr>
-				<td class="menucell"><a href="bookstore.html">Cines</a></td>
-				<td class="menucell"><a href="bookstore.html">Musicales y Shows</a></td>
-				<td class="menucell"><a href="bookstore.html">Teatros</a></td>
-				<td class="menucell"><a href="bookstore.html">Conciertos</a></td>
-				<td class="menucell"><a href="bookstore.html">Deportes</a></td>
-				<td class="menucell"><a href="bookstore.html">Infantil y Familiar</a></td>
-				<td class="menucell"><a href="bookstore.html">Exposiciones</a></td>
-				<td class="menucell"><a href="bookstore.html">Promociones especiales</a></td>
+				<td class="menucell"><a href="../barrabusqueda/enconstruccion.html">Cines</a></td>
+				<td class="menucell"><a href="../barrabusqueda/enconstruccion.html">Musicales y Shows</a></td>
+				<td class="menucell"><a href="../barrabusqueda/enconstruccion.html">Teatros</a></td>
+				<td class="menucell"><a href="../barrabusqueda/enconstruccion.html">Conciertos</a></td>
+				<td class="menucell"><a href="../barrabusqueda/enconstruccion.html">Deportes</a></td>
+				<td class="menucell"><a href="../barrabusqueda/enconstruccion.html">Infantil y Familiar</a></td>
+				<td class="menucell"><a href="../barrabusqueda/enconstruccion.html">Exposiciones</a></td>
+				<td class="menucell"><a href="../barrabusqueda/enconstruccion.html">Promociones especiales</a></td>
 			</tr>
 		</table>
 	</div>
 	<table class="slidertable" style="margin:auto">
 	 <tr>
-		 <td class="arrowbanner"><img class="arrowleft" id="arrow" src="images/arrowleft.png" alt="arrow"></td>
+		 <td class="arrowbanner"><img id="arrowleft" class="arrow" src="images/arrowleft.png" alt="arrow"></td>
 		 <td class="bg">
 			 <div style="text-align:center" class="dots">
   		 	<span class="dot" onclick="currentSlide(1)"></span>
   			<span class="dot" onclick="currentSlide(2)"></span>
   			<span class="dot" onclick="currentSlide(3)"></span>
+				<span class="dot" onclick="currentSlide(4)"></span>
 			 </div>
 			 <div class="slider">
 				 <div class="banner_css" style="display: inline-block;">
@@ -83,12 +83,41 @@
 				 <div class="banner_css" style="display: inline-block;">
 						 <img class="slider_img" src="images/BVSS.png">
 				 </div>
-				 
+				 <div class="banner_css" style="display: inline-block;">
+						 <img class="slider_img" src="images/cleopatra.png">
+				 </div>
+
 			 </div>
 		 </td>
-		 <td class="arrowbanner"><img class="arrowright" id="arrow" src="images/arrow.png" alt="arrow"></td>
+		 <td class="arrowbanner"><img id="arrowright" class="arrow" src="images/arrow.png" alt="arrow"></td>
 	 </tr>
  </table>
+ <div class="novedades">
+	 <div class="novBox">
+		 <div class="tituloBox">
+			 <p class="contentTitulo">Estrenos de Cine</p>
+		 </div>
+		 <div class="imgBox">
+			 <img class="portadaBox" src="images/deadpool1.jpg">
+		 </div>
+	 </div>
+	 <div class="novBox">
+		 <div class="tituloBox">
+			 <p class="contentTitulo">Novedades de Teatro</p>
+		 </div>
+		 <div class="imgBox">
+			 <img class="portadaBox" src="images/deadpool2.jpg">
+		 </div>
+	 </div>
+	 <div class="novBox">
+		 <div class="tituloBox">
+			 <p class="contentTitulo">Próximos Conciertos</p>
+		 </div>
+		 <div class="imgBox">
+			 <img class="portadaBox" src="images/deadpool3.jpg">
+		 </div>
+	 </div>
+ </div>
 
 </body>
 
@@ -116,7 +145,7 @@ var automatic = setInterval(function() {		//This function makes the slides pass 
 	slideCraigslist();
 }, 7000);
 
-$('.arrowright').click(function() {				//Passes slides manually by clicking right arrow.
+$('#arrowright').click(function() {				//Passes slides manually by clicking right arrow.
 	clearInterval(automatic);						//In case the index is higher than the amount of slides -1, it will start again from 0
 	lastIndex = index;
 	index = index + 1;
@@ -134,7 +163,7 @@ $('.arrowright').click(function() {				//Passes slides manually by clicking righ
 		}, 5000);
 });
 
-$('.arrowleft').click(function() {				//Passes slides manually by clicking left arrow.
+$('#arrowleft').click(function() {				//Passes slides manually by clicking left arrow.
 	clearInterval(automatic);						//In case the index is lower than 0, it will start again from the last slide
 	lastIndex = index;
 	index = index - 1;

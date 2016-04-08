@@ -102,11 +102,12 @@ button:hover{
 }
 td{
 	width: 128px;
+	color: white;
 }
 
 a {
 	text-decoration: none;
-	color: white;
+	color: inherit;;
 }
 .menucell:hover, .menucell:active {
 	color: #0d4168;
@@ -120,10 +121,10 @@ a:hover, a:active {
 	color: #0d4168;
 	background-color: white;
 }
-a:visited{
+/*a:visited{
 	color: white;
 	background-color: #0d4168;
-}
+}*/
 
 #barrabusqueda{
 	margin: 0 auto;
@@ -225,7 +226,7 @@ select option {
 }
 
 /*Sets the size of the arrows*/
-#arrow{
+.arrow{
 	width: 40px;
 	height: 80px;
 }
@@ -255,4 +256,41 @@ select option {
 .dots{
 	position: relative;
 	top: 285px;
+}
+
+.novedades{
+	width: 100%;
+	height: auto;
+	background-color: white;
+	margin-top: 0px;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.novBox{
+	height: 380px;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tituloBox{
+	height: 40px;
+	text-align: left;
+	color: white;
+	background: linear-gradient(to right, #002b55, #ffffff);
+}
+
+.contentTitulo{
+	padding-top: 10px;
+	font-family: "Verdana";
+}
+
+.imgBox{
+	padding-top: 5px;
+}
+
+.portadaBox{
+	height: 300px;
+	width: 100%;
 }

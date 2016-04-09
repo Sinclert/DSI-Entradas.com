@@ -1,179 +1,172 @@
 <!DOCTYPE html>
 
-<!-- Done by:
-	DSI PROJECT GROUP NUMBER 4
--->
+<!-- Done by: DSI PROJECT GROUP NUMBER 4 -->
 
 <html>
 
-<!-- Header defining the link to the css, the character set and the web title/name -->
-<head>
+    <!-- Header defining the link to the css, the character set and the web title/name -->
+    <head>
+        <title> Película </title>
+        <link rel="stylesheet" type="text/css" href="pagPelicula.css">
+        <script type="text/javascript" src="../jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="pelicula.js"></script>
+        <meta charset="UTF-8">
+    </head>
 
-	<title> Película </title>
-	<link rel="stylesheet" type="text/css" href="pagPelicula.css">
-    <script type="text/javascript" src="../jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="pelicula.js"></script>
-	<meta charset="UTF-8">
-	
-</head>
+    <body>
 
-<body>
+        <div id="header">
+            <div id="logo-div">
+                <a href="mainpage.html">
+                    <img id="logo" src="Imagenes/logoentradas.png" alt="La imagen no pudo cargarse.">
+                </a>
+            </div>
 
-    <div id="header">
-		<div id="logo-div">
-			<a href="mainpage.html">
-				<img id="logo" src="Imagenes/logoentradas.png" alt="La imagen no pudo cargarse.">
-			</a>
-		</div>
-        
-		<div id="botonRegistro">
-			<button id = "regButton" type="button" onclick = "show_register()">Regístrate</button>
-		</div>
-        
-		<div id="botonInicio">
-			<button id = "initButton" type="button" onclick = "show_login()">Inicia Sesión</button>
-		</div>
-	</div>
+            <div id="botonRegistro">
+                <button id = "regButton" type="button" onclick = "show_register()">Regístrate</button>
+            </div>
 
-    
-	<div id = "menu">
-		<table id = "menu-table">
-			<tr>
-				<td><a href="bookstore.html">Cines</a></td>
-				<td><a href="bookstore.html">Musicales y Shows</a></td>
-				<td><a href="bookstore.html">Teatros</a></td>
-				<td><a href="bookstore.html">Conciertos</a></td>
-				<td><a href="bookstore.html">Deportes</a></td>
-				<td><a href="bookstore.html">Infantil</a></td>
-				<td><a href="bookstore.html">Exposiciones</a></td>
-				<td><a href="bookstore.html">Promociones especiales</a></td>
-			</tr>
-		</table>
-		
-	</div>
-    
-    
-	<div id="cuerpo">
-
-		<div id="contenido">
-
-			<div id="infoP">
-
-				<div id="imgP">
-					<img id="film" src="Imagenes/civilwar.jpg" alt="film img" width="160" height="259">
-				</div>
-
-				<div id="descripcion">
-					<h3> Detalles </h3>
-					<hr>
-					<p> <b> Fecha de estreno: </b> 29 April 2016 <br>
-						<b> Duración:</b> 146 min	<br>
-						<b> Directores:</b> Anthony Russo, Joe Russo <br>
-						<b> Género:</b>  Acción, Aventura, Ciencia Ficción <br>
-						<b> Calificación: </b> Más de 13 años
-					</p>
-
-				</div>
-				<div id="sinopsis">
-					<h3> Sinopsis </h3>
-					<hr>
-					<p> Capitán América: Civil War' sigue a Steve Rogers liderando al nuevo equipo de Vengadores en sus continúos esfuerzos para mantener a salvo a la humanidad. Pero después de 		los daños colaterales de otro incidente en el que el grupo de superhéroes está involucrado, la presión política instala un sistema de responsabilidad encabezado por el 		Gobierno para supervisar y dirigir al equipo. El nuevo <i>status quo</i> provoca la ruptura de los Vengadores y da como resultado dos bandos: uno liderado por Steve Rogers 	y su deseo de que los superhéroes sigan siendo libres para defender a la humanidad sin la intromisión del Gobierno y otro por Tony Stark que decide apoyar la 					decisión de la clase dirigente.
-					</p>
-
-				</div>
-
-			</div>
-
-			<div id="elegirCine">
-				<select id="Seleccionar Cine">
-        			<option selected="selected" value="seleccionar">Seleccionar cine</option>
-        			<option value="estrenos">Yelmo Cines - Tresaguas</option>
-        			<option value="novedades">Yelmo Cines - Planetocio</option>
-        			<option value="cine">Yelmo Cines - Isla Azul</option>
-        			<option value="teatro">Yelmo Cines - Plenilunio</option>
-        			<option value="pelicula">Yelmo Cines - Rivas Futura</option>
-        			<option value="concierto">Yelmo Cines - Plaza Norte 2</option>
-      			</select>
-
-      			<a href="http://cine.entradas.com/entradas/selEntradasNoNumCine.do">
-					<input type="button" name="submitbtn" id = "btn1" value="Comprar Entradas" onclick="validate_l()"> 
-				</a>
-			</div>
-
-			<h2> Galería de imágenes </h2>
-			<hr style="margin-right:2%; margin-left:2%;">
-            
-			<div id="imagenes">
-				<ul>
-					<li> <img id="im"  class="thumbnail" src="Imagenes/bruja.jpg" alt="film img" width="160" height="259"> </li>
-					<li> <img id="im"  class="thumbnail" src="Imagenes/poster.jpg" alt="film img" width="160" height="259"> </li>
-					<li> <img id="im"  class="thumbnail" src="Imagenes/capi.jpg" alt="film img" width="160" height="259"> </li>
-					<li> <img id="im"  class="thumbnail" src="Imagenes/poster2.jpg" alt="film img" width="160" height="259"> </li>
-					<li> <img id="im"  class="thumbnail" src="Imagenes/plancha.jpg" alt="film img" width="160" height="259"> </li>
-				</ul>
-			</div>
-            
-			<div id="end">
-				<hr>
-			</div>
-
-		</div>
-
-	</div>
-
-    
-    
-    <div class = "box" id="login">
-
-            <h2>Iniciar Sesión</h2> <!-- PARA VERIFICAR SI ESTOS DATOS SON CORRECTOS SE UTILIZARIA BACKEND -->
-
-            <ul>
-                <li>
-                    <label>Usuario:<span>*</span> </label>
-                    <input type="text" id="usr_l" name="usr"> 
-                </li>
-                <li>
-                    <label>Contraseña:<span>*</span> </label>
-                    <input type="password" name="pass" maxlength="8" class="password">
-                </li>
-            </ul>
-            <input type="button" name="submitbtn" id = "btn2"
-              value="Inicia Sesión" onclick="validate_l()"> <!-- VALIDATE_L HARIA REFERENCIA A UNA FUNCION DE JAVASCRIPT PARA REVISAR LOS CAMPOS PERO HARIA FALTA BACKEND PARA VERIFICARLOS -->
-
-    </div>
-
-        <div class="box" id="register">
-
-            <h2>Registrarse</h2>
-
-            <ul>
-                <li>
-                    <label>Usuario:<span>*</span></label>
-                    <input type="text" id="usr" name="usr" class="optional">
-                </li>
-                <li>
-                    <label>Contraseña:<span>*</span></label>
-                    <input type="password" name="pass" maxlength="8"
-                    class="password">
-                </li>
-                <li>
-                    <label>Repite la contraseña:<span>*</span></label>
-                    <input type="password" name="rpass"   maxlength="8"
-                        class="password">
-                </li>
-                <li>
-                    <label>Correo Electrónico: <span>*</span></label>
-                    <input type="text" name="correo" maxlength="30">
-                </li>
-                <li>
-                    <label> Repite Correo Electrónico: <span>*</span></label>
-                    <input type="text" name="correo" maxlength="30">
-                </li>
-            </ul>
-            <input type="button" name="submitbtn" id = "btn2"
-              value="Regístrate" onclick="validate_r()"> <!-- VALIDATE_R HACE REFERENCIA A UNA FUNCION DE JAVASCRIPT QUE VA A VERIFICAR QUE EL FORMATO DE LOS CAMPOS ES EL CORRECTO, -->
-            
+            <div id="botonInicio">
+                <button id = "initButton" type="button" onclick = "show_login()">Inicia Sesión</button>
+            </div>
         </div>
-</body>
+
+
+        <div id = "menu">
+            <table id = "menu-table">
+                <tr>
+                    <td><a href="bookstore.html">Cines</a></td>
+                    <td><a href="bookstore.html">Musicales</a></td>
+                    <td><a href="bookstore.html">Teatros</a></td>
+                    <td><a href="bookstore.html">Conciertos</a></td>
+                    <td><a href="bookstore.html">Deportes</a></td>
+                    <td><a href="bookstore.html">Infantil</a></td>
+                    <td><a href="bookstore.html">Exposiciones</a></td>
+                    <td><a href="bookstore.html">Promociones</a></td>
+                </tr>
+            </table>
+
+        </div>
+
+
+        <div id="cuerpo">
+
+            <div id="infoP">
+
+                <div id="imgP">
+                    <img id="film" src="Imagenes/civilwar.jpg" alt="film img" width="160" height="259">
+                </div>
+
+                <div id="descripcion">
+                    <h3> Detalles </h3>
+                    <hr>
+                    <p> <b> Fecha de estreno: </b> 29 April 2016 <br>
+                        <b> Duración:</b> 146 min	<br>
+                        <b> Directores:</b> Anthony Russo, Joe Russo <br>
+                        <b> Género:</b>  Acción, Aventura, Ciencia Ficción <br>
+                        <b> Calificación: </b> Más de 13 años
+                    </p>
+
+                </div>
+                <div id="sinopsis">
+                    <h3> Sinopsis </h3>
+                    <hr>
+                    <p> Capitán América: Civil War' sigue a Steve Rogers liderando al nuevo equipo de Vengadores en sus continúos esfuerzos para mantener a salvo a la humanidad. Pero después de 		los daños colaterales de otro incidente en el que el grupo de superhéroes está involucrado, la presión política instala un sistema de responsabilidad encabezado por el 		Gobierno para supervisar y dirigir al equipo. El nuevo <i>status quo</i> provoca la ruptura de los Vengadores y da como resultado dos bandos: uno liderado por Steve Rogers 	y su deseo de que los superhéroes sigan siendo libres para defender a la humanidad sin la intromisión del Gobierno y otro por Tony Stark que decide apoyar la 					decisión de la clase dirigente.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div id="elegirCine">
+                <select>
+                    <option selected="selected" value="seleccionar">Seleccionar cine</option>
+                    <option value="estrenos">Yelmo Cines - Tresaguas</option>
+                    <option value="novedades">Yelmo Cines - Planetocio</option>
+                    <option value="cine">Yelmo Cines - Isla Azul</option>
+                    <option value="teatro">Yelmo Cines - Plenilunio</option>
+                    <option value="pelicula">Yelmo Cines - Rivas Futura</option>
+                    <option value="concierto">Yelmo Cines - Plaza Norte 2</option>
+                </select>
+
+                <a href="http://cine.entradas.com/entradas/selEntradasNoNumCine.do">
+                    <button name="submitbtn" id = "btn1" value="Comprar Entradas" onclick="validate_l()">Comprar Entradas</button> 
+                </a>
+            </div>
+
+            <h2> Galería de imágenes </h2>
+            <hr style="margin-right:2%; margin-left:2%;">
+
+            <div id="imagenes">
+                <ul>
+                    <li> <img class="im" src="Imagenes/bruja.jpg" alt="film img" width="160" height="259"> </li>
+                    <li> <img class="im" src="Imagenes/poster.jpg" alt="film img" width="160" height="259"> </li>
+                    <li> <img class="im" src="Imagenes/capi.jpg" alt="film img" width="160" height="259"> </li>
+                    <li> <img class="im" src="Imagenes/poster2.jpg" alt="film img" width="160" height="259"> </li>
+                    <li> <img class="im" src="Imagenes/plancha.jpg" alt="film img" width="160" height="259"> </li>
+                </ul>
+            </div>
+
+            <div id="end">
+                <hr>
+            </div>
+
+
+        </div>
+
+
+
+        <div class = "box" id="login">
+
+                <h2>Iniciar Sesión</h2> <!-- PARA VERIFICAR SI ESTOS DATOS SON CORRECTOS SE UTILIZARIA BACKEND -->
+
+                <ul>
+                    <li>
+                        <label>Usuario:<span>*</span> </label>
+                        <input type="text" id="usr_l" name="usr"> 
+                    </li>
+                    <li>
+                        <label>Contraseña:<span>*</span> </label>
+                        <input type="password" name="pass" maxlength="8" class="password">
+                    </li>
+                </ul>
+                <input type="button" name="submitbtn" class = "btn2"
+                  value="Inicia Sesión" onclick="validate_l()"> <!-- VALIDATE_L HARIA REFERENCIA A UNA FUNCION DE JAVASCRIPT PARA REVISAR LOS CAMPOS PERO HARIA FALTA BACKEND PARA VERIFICARLOS -->
+
+        </div>
+
+            <div class="box" id="register">
+
+                <h2>Registrarse</h2>
+
+                <ul>
+                    <li>
+                        <label>Usuario:<span>*</span></label>
+                        <input type="text" id="usr" name="usr" class="optional">
+                    </li>
+                    <li>
+                        <label>Contraseña:<span>*</span></label>
+                        <input type="password" name="pass" maxlength="8"
+                        class="password">
+                    </li>
+                    <li>
+                        <label>Repite la contraseña:<span>*</span></label>
+                        <input type="password" name="rpass"   maxlength="8"
+                            class="password">
+                    </li>
+                    <li>
+                        <label>Correo Electrónico: <span>*</span></label>
+                        <input type="text" name="correo" maxlength="30">
+                    </li>
+                    <li>
+                        <label> Repite Correo Electrónico: <span>*</span></label>
+                        <input type="text" name="correo" maxlength="30">
+                    </li>
+                </ul>
+                <input type="button" name="submitbtn" class = "btn2"
+                  value="Regístrate" onclick="validate_r()"> <!-- VALIDATE_R HACE REFERENCIA A UNA FUNCION DE JAVASCRIPT QUE VA A VERIFICAR QUE EL FORMATO DE LOS CAMPOS ES EL CORRECTO, -->
+
+            </div>
+    </body>
     
 </html>

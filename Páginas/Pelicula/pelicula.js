@@ -30,17 +30,17 @@ $(document).ready(function () {
 function show_login() {
     $("#register").hide();
     $("#login").show();
-    $("#header").css("filter", "blur(2px)");
-    $("#menu").css("filter", "blur(2px)");
-    $("#cuerpo").css("filter", "blur(2px)");
+    $("#header").css("filter", "blur(5px)");
+    $("#menu").css("filter", "blur(5px)");
+    $("#cuerpo").css("filter", "blur(5px)");
 }
     
 function show_register() {
     $("#login").hide();
     $("#register").show();
-    $("#header").css("filter", "blur(2px)");
-    $("#menu").css("filter", "blur(2px)");
-    $("#cuerpo").css("filter", "blur(2px)");
+    $("#header").css("filter", "blur(5px)");
+    $("#menu").css("filter", "blur(5px)");
+    $("#cuerpo").css("filter", "blur(5px)");
 }
 
 

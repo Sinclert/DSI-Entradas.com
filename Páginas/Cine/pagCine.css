@@ -15,8 +15,8 @@ body {
 }
 
 #logo {
-	width:170px;
-	height:70px;
+	width: 170px;
+	height: 70px;
 }
 
 #header {
@@ -26,6 +26,7 @@ body {
 	margin-top: 0px;
 	margin-left: auto;
 	margin-right: auto;
+    -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 #menu {
@@ -34,6 +35,7 @@ body {
 	height: 40px;
 	margin-left: auto;
 	margin-right: auto;
+    -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 #botonInicio {
@@ -50,14 +52,6 @@ body {
 	color: white;
 }
 
-button {
-	border: black;
-	margin-top: 20px;
-	width: 100px;
-	height: 25px;
-	border: black 1px solid;
-}
-
 button:hover{
 	cursor: pointer; cursor: hand;
 }
@@ -65,38 +59,44 @@ button:hover{
 #initButton {
     background-color: #0d4168;
 	color: white;
+    border: black;
+	margin-top: 20px;
+	width: 100px;
+	height: 25px;
+	border: black 1px solid;
 }
 
 #regButton {
 	margin-right: 30px;
 	background-color: #0d4168;
 	color: white;
+    border: black;
+	margin-top: 20px;
+	width: 100px;
+	height: 25px;
+	border: black 1px solid;
 }
 
 #menu-table {
-	position: center;
+    margin-left: auto;
+    margin-right: auto;
 	width: 950px;
 	height: 30px;
-	margin-left: 35px;
-	margin-bottom: 0px;
 }
 
 #menu-table, td {
-	border-collapse:collapse;
-	border: black 1px solid;
 	text-align: center;
 	background-color: #0d4168;
 	color: white;
 	font-family: "Verdana";
 	font-size: 12px;
-	padding: 5px;
 }
 
-td {
+#menu td {
 	width: 130px;
 }
 
-td:hover {
+#menu td:hover {
 	background-color: #397090;
 }
 
@@ -113,6 +113,7 @@ a:visited {
 
 a {
 	text-decoration: none;
+    color: inherit;
 }
 
 hr {

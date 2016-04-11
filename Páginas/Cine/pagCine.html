@@ -11,16 +11,15 @@
 
 	<title> Sala de Cine </title>
 	<link rel="stylesheet" type="text/css" href="pagCine.css">
-    <script type="text/javascript" src="../jquery-1.8.3.min.js">></script>
+    <script type="text/javascript" src="../jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="pcine.js"></script>
     <link type='text/css' rel='stylesheet' href='css/slider.css' />
-	<script type="text/javascript" src="js/jquery.liquidcarousel.pack.js"></script>
-	<script type="text/javascript">
-	<!--
-		$(document).ready(function() {
-			$('#liquid1').liquidcarousel({height:129, duration:100, hidearrows:false});
-		});
-	-->
+    <script type="text/javascript" src="js/jquery.liquidcarousel.pack.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            $('#liquid1').liquidcarousel({height:129, duration:100, hidearrows:false});
+        });
 	</script>
 	<meta charset="UTF-8">
 	
@@ -29,37 +28,37 @@
 <body>
 
     <div id="header">
-		<div id="logo-div">
-			<a href="mainpage.html">
-				<img id="logo" src="images/logoentradas.png" alt="La imagen no pudo cargarse.">
-			</a>
-		</div>
-        
-		<div id="botonRegistro">
-			<button id = "regButton" type="button" onclick = "show_register()">Regístrate</button>
-		</div>
-        
-		<div id="botonInicio">
-			<button id = "initButton" type="button" onclick = "show_login()">Inicia Sesión</button>
-		</div>
-	</div>
+            <div id="logo-div">
+                <a href="mainpage.html">
+                    <img id="logo" src="images/logoentradas.png" alt="La imagen no pudo cargarse.">
+                </a>
+            </div>
 
-    
-	<div id = "menu">
-		<table id = "menu-table">
-			<tr>
-				<td><a href="bookstore.html">Cines</a></td>
-				<td><a href="bookstore.html">Musicales y Shows</a></td>
-				<td><a href="bookstore.html">Teatros</a></td>
-				<td><a href="bookstore.html">Conciertos</a></td>
-				<td><a href="bookstore.html">Deportes</a></td>
-				<td><a href="bookstore.html">Infantil</a></td>
-				<td><a href="bookstore.html">Exposiciones</a></td>
-				<td><a href="bookstore.html">Promociones especiales</a></td>
-			</tr>
-		</table>
-		
-	</div>
+            <div id="botonRegistro">
+                <button id = "regButton" type="button" onclick = "show_register()">Regístrate</button>
+            </div>
+
+            <div id="botonInicio">
+                <button id = "initButton" type="button" onclick = "show_login()">Inicia Sesión</button>
+            </div>
+    </div>
+
+
+    <div id = "menu">
+            <table id = "menu-table">
+                <tr>
+                    <td><a href="bookstore.html">Cines</a></td>
+                    <td><a href="bookstore.html">Musicales</a></td>
+                    <td><a href="bookstore.html">Teatros</a></td>
+                    <td><a href="bookstore.html">Conciertos</a></td>
+                    <td><a href="bookstore.html">Deportes</a></td>
+                    <td><a href="bookstore.html">Infantil</a></td>
+                    <td><a href="bookstore.html">Exposiciones</a></td>
+                    <td><a href="bookstore.html">Promociones</a></td>
+                </tr>
+            </table>
+
+    </div>
     
     
 	<div id="cuerpo">

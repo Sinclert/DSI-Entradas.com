@@ -31,31 +31,16 @@ body {
     -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-#menu {
-	background-color: #002b55;
-	width: 1024px;
-	height: 40px;
-	margin-left: auto;
-	margin-right: auto;
-    -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-}
-
-#botonInicio {
+.headerButton {
 	float: right;
 	margin-right: 10px;
 	height: 15px;
 	color: white;
 }
 
-#botonRegistro {
-	float: right;
-	margin-right: 10px;
-	height: 15px;
-	color: white;
-}
-
-button:hover{
+#header button:hover{
 	cursor: pointer; cursor: hand;
+    background-color: #397090;
 }
 
 #initButton {
@@ -79,6 +64,15 @@ button:hover{
 	border: black 1px solid;
 }
 
+#menu {
+	background-color: #002b55;
+	width: 1024px;
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+    -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
 #menu-table {
     margin-left: auto;
     margin-right: auto;
@@ -95,11 +89,19 @@ button:hover{
 }
 
 #menu td {
-	width: 130px;
+	width: 12.5%;
 }
 
 #menu td:hover {
 	background-color: #397090;
+}
+
+#menu-table a {
+    display: block;
+    vertical-align: middle;
+    line-height: 40px;
+    height: 100%;
+    width: 100%;
 }
 
 a {
@@ -290,11 +292,11 @@ h3 {
 
 .box {
     position: fixed;
-    margin-left: 18%;
-    margin-right: 18%;
-    margin-top: 14%;
-    margin-bottom: 14%;
-	width: 500px;
+    margin-left: 17%;
+    margin-right: 17%;
+    margin-top: 13%;
+    margin-bottom: 13%;
+	width: 550px;
     border-color: rgba(0, 0, 0, 0.5);
     border-style: solid;
     border-width: thin;

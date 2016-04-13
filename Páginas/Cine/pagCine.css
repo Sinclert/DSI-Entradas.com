@@ -1,7 +1,9 @@
 /* Done by:
 	DSI PROJECT GROUP NUMBER 4
 */
+
 body {
+    margin: 0px;
 	background-color: #cccccc;
 	font-family: "Verdana"; 
 	width: 1024px;
@@ -29,31 +31,16 @@ body {
     -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-#menu {
-	background-color: #002b55;
-	width: 1024px;
-	height: 40px;
-	margin-left: auto;
-	margin-right: auto;
-    -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-}
-
-#botonInicio {
+.headerButton {
 	float: right;
 	margin-right: 10px;
 	height: 15px;
 	color: white;
 }
 
-#botonRegistro {
-	float: right;
-	margin-right: 10px;
-	height: 15px;
-	color: white;
-}
-
-button:hover{
+#header button:hover{
 	cursor: pointer; cursor: hand;
+    background-color: #397090;
 }
 
 #initButton {
@@ -77,6 +64,15 @@ button:hover{
 	border: black 1px solid;
 }
 
+#menu {
+	background-color: #002b55;
+	width: 1024px;
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+    -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
 #menu-table {
     margin-left: auto;
     margin-right: auto;
@@ -93,22 +89,19 @@ button:hover{
 }
 
 #menu td {
-	width: 130px;
+	width: 12.5%;
 }
 
 #menu td:hover {
 	background-color: #397090;
 }
 
-a:active{
-	background-color: white;
-	color: black;
-	text-decoration: none;
-}
-
-a:visited {
-	background-color: #0d4168;
-	color: white;
+#menu-table a {
+    display: block;
+    vertical-align: middle;
+    line-height: 40px;
+    height: 100%;
+    width: 100%;
 }
 
 a {
@@ -269,13 +262,126 @@ select {
             transform: scale(1.2);
 }
 
+/* CARROUSEL STYLE */
+
+.sac {
+	display:block;
+	width:100%;
+	text-align:right;
+	font-style:italic;
+	margin-bottom:45px;
+	font-size:12px;
+}
+
+pre, blockquote {
+	-moz-border-radius:10px 10px 10px 10px;
+	-webkit-border-radius:10px 10px 10px 10px;
+	border-radius:10px 10px 10px 10px;
+	background-color:#DFE7DD;
+	margin:15px 0;
+	padding:15px;
+}
+
+pre, code {
+	font-family:monospace;
+	font-size:12px;
+}
+
+.liquid {
+	background:#313b31 url('../images/bodybackground.png') repeat-y scroll 50% 0;
+	border:2px solid #19301C;
+	-moz-border-radius:10px 10px 10px 10px;
+	-webkit-border-radius:10px 10px 10px 10px;
+	border-radius:10px 10px 10px 10px;
+	padding: 10px;
+}
+
+.liquid .previous {
+	display:block;
+	height:126px;
+	width:64px;
+	background-image:url('../images/previous.png');
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+.liquid .next {
+	display:block;
+	height:126px;
+	width:64px;
+	background-image:url('../images/next.png');
+	float:right;
+	margin:0;
+	padding:0;
+}
+
+.liquid ul li {
+	width:126px;
+	padding:0 2px;
+	margin:0;
+}
+
+.liquid ul li a img {
+	-moz-box-shadow: 5px 5px 3px #222;
+   	-webkit-box-shadow: 5px 5px 3px #222;
+   	box-shadow: 5px 5px 3px #222;
+}
+
+
+#f1_container {
+  position: relative;
+  margin: 0;
+  width: 88;
+  height: 126;
+  z-index: 1;
+}
+
+#f1_container {
+  perspective: 1000;
+}
+
+#f1_card {
+  width: 88;
+  height: 126;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+  box-shadow: -5px 5px 5px #aaa;
+}
+
+.face {
+  position: absolute;
+  width: 88;
+  height: 126;
+  backface-visibility: hidden;
+}
+
+.face.back {
+  display: block;
+  position: absolute;
+  transform: rotateY(180deg);
+  width: 88;
+  height: 126;
+  padding: 5;
+  color: black;
+  text-align: left;
+  font-size:8px;
+  background-color: grey;
+}
+
+/* CARROUSEL STYLE FINISH */
+
 .box {
-    position:absolute;
-	margin-left: auto;
-    margin-right: auto;
-	width: 500px;
-    height: auto;
-    margin-top: 20%;
+    position: fixed;
+    margin-left: 17%;
+    margin-right: 17%;
+    margin-top: 13%;
+    margin-bottom: 13%;
+	width: 550px;
     border-color: rgba(0, 0, 0, 0.5);
     border-style: solid;
     border-width: thin;

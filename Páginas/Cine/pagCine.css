@@ -1,6 +1,4 @@
-/* Done by:
-	DSI PROJECT GROUP NUMBER 4
-*/
+/* Done by: DSI PROJECT GROUP NUMBER 4 */
 
 body {
     margin: 0px;
@@ -431,14 +429,7 @@ input[type="password"], input[type="email"], input[type="text"] {
     background-color:#476e9e;
 }
 
-.btn2:active {
-    position:relative;
-    top:1px;
-}
-
 #end {
-	height: auto;
 	float: left;
 	width: 98%;
-	margin-top: 1.5%;
 }

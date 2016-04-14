@@ -1,7 +1,5 @@
-
 $(document).ready(function () {
-    
-    
+     
     $(document).mouseup(function (e){
         var login = $("#login");
         var register = $("#register");

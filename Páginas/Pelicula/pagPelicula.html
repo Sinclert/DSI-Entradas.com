@@ -127,46 +127,44 @@
                     </li>
                     <li>
                         <label>Contraseña:<span>*</span> </label>
-                        <input type="password" name="pass" maxlength="8" class="password">
+                        <input type="password" name="pass" maxlength="8" id="password_l">
                     </li>
                 </ul>
-                <input type="button" name="submitbtn" class = "btn2"
-                  value="Inicia Sesión" onclick="validate_l()"> <!-- VALIDATE_L HARIA REFERENCIA A UNA FUNCION DE JAVASCRIPT PARA REVISAR LOS CAMPOS PERO HARIA FALTA BACKEND PARA VERIFICARLOS -->
+                <button name="submitbtn" class = "btn2" onclick="validate_login()">Inicia Sesión</button>
 
         </div>
 
-            <div class="box" id="register">
+        <div class="box" id="register">
 
-                <h2>Registrarse</h2>
+            <h2>Registrarse</h2>
 
-                <ul>
-                    <li>
-                        <label>Usuario:<span>*</span></label>
-                        <input type="text" id="usr" name="usr" class="optional">
-                    </li>
-                    <li>
-                        <label>Contraseña:<span>*</span></label>
-                        <input type="password" name="pass" maxlength="8"
+            <ul>
+                <li>
+                    <label>Usuario:<span>*</span></label>
+                    <input type="text" id="usr" name="usr" class="optional">
+                </li>
+                <li>
+                    <label>Contraseña:<span>*</span></label>
+                    <input type="password" name="pass" maxlength="8"
+                    class="password">
+                </li>
+                <li>
+                    <label>Repite la contraseña:<span>*</span></label>
+                    <input type="password" name="rpass"   maxlength="8"
                         class="password">
-                    </li>
-                    <li>
-                        <label>Repite la contraseña:<span>*</span></label>
-                        <input type="password" name="rpass"   maxlength="8"
-                            class="password">
-                    </li>
-                    <li>
-                        <label>Correo Electrónico: <span>*</span></label>
-                        <input type="text" name="correo" maxlength="30">
-                    </li>
-                    <li>
-                        <label> Repite Correo Electrónico: <span>*</span></label>
-                        <input type="text" name="correo" maxlength="30">
-                    </li>
-                </ul>
-                <input type="button" name="submitbtn" class = "btn2"
-                  value="Regístrate" onclick="validate_r()"> <!-- VALIDATE_R HACE REFERENCIA A UNA FUNCION DE JAVASCRIPT QUE VA A VERIFICAR QUE EL FORMATO DE LOS CAMPOS ES EL CORRECTO, -->
+                </li>
+                <li>
+                    <label>Correo Electrónico: <span>*</span></label>
+                    <input type="text" name="correo" maxlength="30">
+                </li>
+                <li>
+                    <label> Repite Correo Electrónico: <span>*</span></label>
+                    <input type="text" name="correo" maxlength="30">
+                </li>
+            </ul>
+            <button name="submitbtn" class = "btn2" onclick="validate_reg()">Regístrate</button>
 
-            </div>
+        </div>
     </body>
     
 </html>

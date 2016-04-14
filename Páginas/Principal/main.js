@@ -115,3 +115,23 @@ function show_register() {
     $("#menu").css("filter", "blur(5px)");
     $("#cuerpo").css("filter", "blur(5px)");
 }
+
+
+function validate_login() {
+    var user = $("#usr_l");
+    var password = $("#password_l");
+    
+    if (user.val() == ""){
+        user.css("border", "1px solid red");
+    }
+    else {
+        user.css("border", "1px solid grey");
+    }
+    
+    if (password.val() == ""){
+        password.css("border", "1px solid red");
+    }
+    else {
+        password.css("border", "1px solid grey");
+    }
+}

@@ -299,7 +299,7 @@ input[type="password"], input[type="email"], input[type="text"] {
 }
 
 .btn2 {
-    background: #0d4168;
+    background:#0d4168;
     border-radius:4px;
     cursor:pointer;
     font-size:13px;

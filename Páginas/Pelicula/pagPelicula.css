@@ -111,9 +111,11 @@ a {
 }
 
 hr {
+    border: 0;
     height: 1px;
     background: #333;
-    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    background-image: linear-gradient(to right, #ccc, #002b55, #ccc);
+    margin-left: 2%;
 }
 
 #cuerpo {
@@ -128,7 +130,7 @@ hr {
 	float: left;
 	width: 98%;
 	height: auto;
-	background-color: #d5d2d2;
+	background-color: #e6e6e6;
 	margin-top: 1%;
 	margin-left: 1%;
 	border-radius: 5px;
@@ -157,25 +159,24 @@ hr {
 
 p {
 	margin-right: 1%;
-	font-family: Palatino Linotype;
 	font-size: 14px;
 }
+
 #btn1 {
-  background:#22a3f5;
-  border-radius:4px;
+  background:#0d4168;
+  border-radius:7px;
   cursor:pointer;
   font-size:13px;
-  font-weight:bold;
+  font-family: "Verdana"; 
   padding:4px 10px;
   text-decoration:none;
-  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   margin-left: 2%;
   margin-bottom: 2%;
   color: white;
 }
 
 #btn1:hover {
-  background-color:#476e9e;
+  background-color:#397090;
 }
 
 #btn1:active {
@@ -194,11 +195,13 @@ p {
 h2 {
 	text-align: center;
 	line-height: 0.5%;
+    color: #002b55;
 }
 
 h3 {
 	line-height: 1%;
 	text-align: center;
+    color: #002b55;
 }
 
 #elegirCine {
@@ -213,13 +216,14 @@ select {
 }
 
 .im { 
-	width: 170px;
-	height: 200px;
+	width:160px;
+    height:259px;
 }
 
 #cuerpo ul {
-    height: 200px;
+    height: 259px;
     list-style: none;
+    margin-left: 20px;
 }
 
 #cuerpo li {

@@ -171,14 +171,13 @@ h4 {
 }
 
 #btn1 {
-  background:#22a3f5;
-  border-radius:4px;
+  background: #0d4168;
+  border-radius:7px;
   cursor:pointer;
   font-size:13px;
-  font-weight:bold;
+  font-family: "Verdana"; 
   padding:4px 10px;
   text-decoration:none;
-  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   margin-left: 2%;
   margin-bottom: 2%;
   color: white;
@@ -419,14 +418,13 @@ input[type="password"], input[type="email"], input[type="text"] {
 }
 
 #btn2 {
-    background:#22a3f5;
+    background:#0d4168;
     border-radius:4px;
     cursor:pointer;
     font-size:13px;
     font-weight:bold;
     padding:4px 10px;
-    text-decoration:none;
-    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    text-decoration:none;;
     margin-left: 40%;
     margin-bottom: 2%;
     color: white;

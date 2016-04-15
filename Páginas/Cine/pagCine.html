@@ -6,21 +6,43 @@
 
 <html>
 
-    <!-- Header defining the link to the css, the character set and the web title/name -->
-    <head>
+<!-- Header defining the link to the css, the character set and the web title/name -->
+<head>
 
-        <title> Sala de Cine </title>
-        <link rel="stylesheet" type="text/css" href="pagCine.css">
-        <script type="text/javascript" src="../jquery-1.8.3.min.js"></script>
-        <script type="text/javascript" src="pagCine.js"></script>
-        <script type="text/javascript" src="js/jquery.liquidcarousel.pack.js"></script>
-        <script type="text/javascript">
-        </script>
-        <meta charset="UTF-8">
+	<title> Sala de Cine </title>
+	<link rel="stylesheet" type="text/css" href="pagCine.css">
+    <script type="text/javascript" src="../jquery-1.8.3.min.js">></script>
+    <script type="text/javascript" src="pcine.js"></script>
+    <link type='text/css' rel='stylesheet' href='css/slider.css' />
+  	<script type="text/javascript" src="js/jquery.liquidcarousel.pack.js"></script>
+	  <script type="text/javascript">
+	<!--
+		$(document).ready(function() {
+			$('#liquid1').liquidcarousel({height:129, duration:100, hidearrows:false});
+		});
+	-->
+	  </script>
+    <script
+    src="http://maps.googleapis.com/maps/api/js">
+</script>
 
-    </head>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(40.531364, -3.639040),
+    zoom:16,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+  }
 
-    <body>
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<meta charset="UTF-8">
+	
+</head>
+
+<body>
 
         <div id="header">
                 <div id="logo-div">
@@ -62,33 +84,35 @@
 
                 <div id="infoP">
 
-                    <div id="imgP">
-                        <img id="film" src="images/logokinepolis.png" alt="film img" width="160" height="259">
-                    </div>
+        <div id="imgP">
+          <img id="film" src="images/logokinepolis.png" alt="film img" width="160" height="259">
+        </div>
+        <h2> KINÉPOLIS MADRID </h2>
+        <hr>
+        <div id="descripcion">
+          <h3> Horarios </h3>
+          <p>De lunes a jueves de 11:00 a 23:00 ininterrumpidamente<br>
+          Viernes de 11:00 a 1:15 ininterrumpidamente<br>
+          Sábados y vísperas de festivo de 13:00 a 1:15 ininterrumpidamente<br>
+          Domingos de 13:00 a 23:00 ininterrumpidamente<br>
+          </p>
+          <h3> Descuentos </h3>
+          <p>Descuento sobre tarifa normal para Carné Joven Europeo, niños, discapacidad y mayores de 65.<br>
+          Se pedirá documento acreditativo a la entrada al cine.<br>
+          Descuento no válido el día del espectador.<br>
+          En el caso de los eventos, no todos aceptan descuentos, por favor, consulte en taquilla.<br>
+          </p>
 
-                    <div id="descripcion">
-                        <h2> KINÉPOLIS MADRID </h2>
-                        <hr>
-                        <h3> Dirección </h3>
-                        <p>Calle de Edgar Nevile s/n (Ciudad de la imagen) 28223 Pozuelo De Alarcon<br>
-                            <a href="https://www.google.be/maps/place/Kin%C3%A9polis+Madrid+Diversia,+C.C.+Heron+Diversia,+Av.+de+Bruselas,+21,+28108+Alcobendas,+Madrid,+Espa%C3%B1a/@40.530178,-3.6419317,17z/data=!3m1!4b1!4m2!3m1!1s0xd422c5db18c261f:0x918fa94c52d91ca1" target="_blank">Mirar mapa</a>
-                        </p>
-                        <h3> Horarios </h3>
-                        <p>De lunes a jueves de 11:00 a 23:00 ininterrumpidamente<br>
-                        Viernes de 11:00 a 1:15 ininterrumpidamente<br>
-                        Sábados y vísperas de festivo de 13:00 a 1:15 ininterrumpidamente<br>
-                        Domingos de 13:00 a 23:00 ininterrumpidamente<br>
-                        </p>
-                        <h3> Descuentos </h3>
-                        <p>Descuento sobre tarifa normal para Carné Joven Europeo, niños, discapacidad y mayores de 65.<br>
-                        Se pedirá documento acreditativo a la entrada al cine.<br>
-                        Descuento no válido el día del espectador.<br>
-                        En el caso de los eventos, no todos aceptan descuentos, por favor, consulte en taquilla.<br>
-                        </p>
+        </div>
 
-                    </div>
+        <div id="sinopsis">
+           <h3> Dirección </h3>
+          <p>Calle de Edgar Nevile s/n (Ciudad de la imagen) 28223 Pozuelo De Alarcon<br>
+          </p>
+          <div id="googleMap" style="width:400px;height:280px;margin-bottom:10px;"></div>
+        </div>
 
-                </div>
+      </div>
 
                 <div id="elegirCine">
                     <select id="Seleccionar Cine">

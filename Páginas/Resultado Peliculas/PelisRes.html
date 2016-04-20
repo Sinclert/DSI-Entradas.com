@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<!-- Done by: DSI PROJECT GROUP NUMBER 4 -->
+
+<html>
+
+    <!-- Header defining the link to the css, the character set and the web title/name -->
+    <head>
+        <title> Película </title>
+        <link rel="stylesheet" type="text/css" href="PelisRes.css">
+        <script type="text/javascript" src="../jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="pelicula.js"></script>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+
+        <div id="header">
+            <div id="logo-div">
+                <a href="../Principal/Main.html">
+                    <img id="logo" src="Imagenes/logoentradas.png" alt="La imagen no pudo cargarse.">
+                </a>
+            </div>
+
+            <div class="headerButton">
+                <button id = "regButton" type="button" onclick = "show_register()">Regístrate</button>
+            </div>
+
+            <div class="headerButton">
+                <button id = "initButton" type="button" onclick = "show_login()">Inicia Sesión</button>
+            </div>
+        </div>
+
+
+        <div id = "menu">
+            <table id = "menu-table">
+                <tr>
+                    <td><a href="../Cine/pagCine.html">Cines</a></td>
+                    <td><a href="../Cine/pagCine.html">Musicales</a></td>
+                    <td><a href="../Cine/pagCine.html">Teatros</a></td>
+                    <td><a href="../Cine/pagCine.html">Conciertos</a></td>
+                    <td><a href="../Cine/pagCine.html">Deportes</a></td>
+                    <td><a href="../Cine/pagCine.html">Infantil</a></td>
+                    <td><a href="../Cine/pagCine.html">Exposiciones</a></td>
+                    <td><a href="../Cine/pagCine.html">Promociones</a></td>
+                </tr>
+            </table>
+
+        </div>
+
+
+        <div id="cuerpo">
+            <div id="topsection">
+                <div id=order>
+                    <img class="lista" src="Imagenes/list-icon-1.png" alt="La imagen no pudo cargarse.">
+                    <img class="lista" src="Imagenes/list-icon-2.png" alt="La imagen no pudo cargarse.">
+                     <select>
+                        <option selected="selected" value="seleccionar">Ordenar</option>
+                        <option value="estrenos">Alfabéticamente</option>
+                        <option value="novedades">Opción 2</option>
+                        <option value="cine">Opción 3</option>
+                </select>
+                </div>
+                <div id="breadcrumbs">
+                    <p> <a href="../Principal/Main.html" style="color:#002b55; font-weight: bold">entradas.com</a> > Películas</p>
+                </div>
+            </div>
+            <div id="lowersection">
+               <hr>
+                <div class="square">
+                    <img class="square "src="Imagenes/civilwar.jpg" alt="La imagen no pudo cargarse." width="130px" height="220px" style="margin-right:2%; margin-left:6%;">
+                    <img class="square" src="Imagenes/civilwar.jpg" alt="La imagen no pudo cargarse." width="130px" height="220px" style="margin-right:2%; margin-left:2%;">
+                    <img class="square" src="Imagenes/civilwar.jpg" alt="La imagen no pudo cargarse." width="130px" height="220px" style="margin-right:2%; margin-left:2%;">
+                    <img class="square" src="Imagenes/civilwar.jpg" alt="La imagen no pudo cargarse." width="130px" height="220px" style="margin-right:2%; margin-left:2%;">
+                    <img class="square" src="Imagenes/civilwar.jpg" alt="La imagen no pudo cargarse." width="130px" height="220px" style="margin-right:2%; margin-left:2%;">
+                    <div class="leyenda">
+                        <p> Capitán América: Civil War <br> cosas cosas cosas <br> cosas cosas cosas</p>
+                    </div>
+                </div>
+                
+            </div>
+	</div>
+</div>
+        </div>
+        
+    </body>

@@ -11,34 +11,30 @@
 
 	<title> Sala de Cine </title>
 	<link rel="stylesheet" type="text/css" href="pagCine.css">
-    <script type="text/javascript" src="../jquery-1.8.3.min.js">></script>
-    <script type="text/javascript" src="pcine.js"></script>
-    <link type='text/css' rel='stylesheet' href='css/slider.css' />
+    <script type="text/javascript" src="../jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="pagCine.js"></script>
+    <link type='text/css' rel='stylesheet' href='css/slider.css'/>
   	<script type="text/javascript" src="js/jquery.liquidcarousel.pack.js"></script>
-	  <script type="text/javascript">
-	<!--
+    <script type="text/javascript">
 		$(document).ready(function() {
 			$('#liquid1').liquidcarousel({height:129, duration:100, hidearrows:false});
 		});
-	-->
-	  </script>
-    <script
-    src="http://maps.googleapis.com/maps/api/js">
-</script>
+    </script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
 
-<script>
-function initialize() {
-  var mapProp = {
-    center:new google.maps.LatLng(40.531364, -3.639040),
-    zoom:16,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
-  }
+    <script>
+    function initialize() {
+      var mapProp = {
+        center:new google.maps.LatLng(40.531364, -3.639040),
+        zoom:16,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+      }
 
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
-<meta charset="UTF-8">
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <meta charset="UTF-8">
 	
 </head>
 

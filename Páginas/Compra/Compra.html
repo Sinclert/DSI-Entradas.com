@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<!-- Done by: DSI PROJECT GROUP NUMBER 4 -->
+
+<html>
+
+    <!-- Header defining the link to the css, the character set and the web title/name -->
+    <head>
+        <title> Entradas.com, tu sitio de entradas online </title>
+        <link rel="stylesheet" type="text/css" href="Compra.css">
+        <script type="text/javascript" src="../jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="Compra.js"></script>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+
+        <div id="header">
+            <div id="logo-div">
+                <a href="../Principal/Main.html">
+                    <img id="logo" src="Imagenes/logoentradas.png" alt="La imagen no pudo cargarse.">
+                </a>
+            </div>
+
+            <div class="headerButton">
+                <button id = "regButton" type="button" onclick = "show_register()">Regístrate</button>
+            </div>
+
+            <div class="headerButton">
+                <button id = "initButton" type="button" onclick = "show_login()">Inicia Sesión</button>
+            </div>
+        </div>
+
+
+        <div id = "menu">
+            <table id = "menu-table">
+                <tr>
+                    <td><a href="../Cine/pagCine.html">Cines</a></td>
+                    <td><a href="../Cine/pagCine.html">Musicales</a></td>
+                    <td><a href="../Cine/pagCine.html">Teatros</a></td>
+                    <td><a href="../Cine/pagCine.html">Conciertos</a></td>
+                    <td><a href="../Cine/pagCine.html">Deportes</a></td>
+                    <td><a href="../Cine/pagCine.html">Infantil</a></td>
+                    <td><a href="../Cine/pagCine.html">Exposiciones</a></td>
+                    <td><a href="../Cine/pagCine.html">Promociones</a></td>
+                </tr>
+            </table>
+
+        </div>
+
+
+        <div id="cuerpo">
+
+            
+
+        </div>
+
+
+
+        <div class = "box" id="login">
+
+                <h2>Iniciar Sesión</h2> <!-- PARA VERIFICAR SI ESTOS DATOS SON CORRECTOS SE UTILIZARIA BACKEND -->
+
+                <ul>
+                    <li>
+                        <label>Usuario:<span>*</span> </label>
+                        <input type="text" id="usr_l" name="usr"> 
+                    </li>
+                    <li>
+                        <label>Contraseña:<span>*</span> </label>
+                        <input type="password" name="pass" maxlength="8" id="password_l">
+                    </li>
+                </ul>
+                <button name="submitbtn" class = "btn2" onclick="validate_login()">Inicia Sesión</button>
+
+        </div>
+
+        <div class="box" id="register">
+
+            <h2>Registrarse</h2>
+
+            <ul>
+                <li>
+                    <label>Usuario:<span>*</span></label>
+                    <input type="text" id="usr" name="usr" class="optional">
+                </li>
+                <li>
+                    <label>Contraseña:<span>*</span></label>
+                    <input type="password" name="pass" maxlength="8"
+                    class="password">
+                </li>
+                <li>
+                    <label>Repite la contraseña:<span>*</span></label>
+                    <input type="password" name="rpass"   maxlength="8"
+                        class="password">
+                </li>
+                <li>
+                    <label>Correo Electrónico: <span>*</span></label>
+                    <input type="text" name="correo" maxlength="30">
+                </li>
+                <li>
+                    <label> Repite Correo Electrónico: <span>*</span></label>
+                    <input type="text" name="correo" maxlength="30">
+                </li>
+            </ul>
+            <button name="submitbtn" class = "btn2" onclick="validate_reg()">Regístrate</button>
+
+        </div>
+    </body>
+    
+</html>

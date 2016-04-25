@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="resultadobusqueda.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="scripts/jquery.slider.js"></script>
+
+	<title>Página Principal</title>
+	<meta charset="UTF8">
+</head>
+<body>
+	<div class="header">
+		<div id="logoentradas">
+			<a href="mainpage.html">
+				<img id="logo1entradas" src="images/logoentradas.png" alt="La imagen no pudo cargarse.">
+			</a>
+		</div>
+		<div class="botonRegistro">
+			<button class ="reg" type="button" href="DSI-Project-master/Registro/registro.html">Regístrate</button>
+		</div>
+		<div class="botonInicio">
+			<button class ="ini" type="button">Inicia Sesión</button>
+		</div>
+	</div>
+
+	<div class="buscador">
+		<div id="barrabusqueda">
+			 <form id="formulario" accept-charset="utf-8" action="enconstruccion.html">
+			    <div id="filtrobox">
+			     	<select id="filtro">
+			      		<option selected="selected" value="sinfiltro">Sin filtro</option>
+			        	<option value="estrenos">Estrenos</option>
+			        	<option value="novedades">Novedades</option>
+			        	<option value="cine">Cine</option>
+			        	<option value="teatro">Teatro</option>
+			        	<option value="pelicula">Película</option>
+			        	<option value="concierto">Concierto</option>
+			        	<option value="deporte">Deporte</option>
+			        	<option value="otros">Otros</option>
+			      	</select>
+			    </div>
+			    <div id="textobusqueda">
+			    	  <input type="text" id="texto" value="" autocomplete="off"/>
+			    </div>
+			    <div id="botonbusqueda">
+			      	<input type="image" src="images/iconobusqueda2.png" id="boton"/>
+			    </div>
+			 </form>
+		</div>
+	</div>
+
+	<div class="menu">
+		<table id="menu">
+			<tr>
+				<td class="menucell"><a href="bookstore.html">Cines</a></td>
+				<td class="menucell"><a href="bookstore.html">Musicales y Shows</a></td>
+				<td class="menucell"><a href="bookstore.html">Teatros</a></td>
+				<td class="menucell"><a href="bookstore.html">Conciertos</a></td>
+				<td class="menucell"><a href="bookstore.html">Deportes</a></td>
+				<td class="menucell"><a href="bookstore.html">Infantil y Familiar</a></td>
+				<td class="menucell"><a href="bookstore.html">Exposiciones</a></td>
+				<td class="menucell"><a href="bookstore.html">Promociones especiales</a></td>
+			</tr>
+		</table>
+	</div>
+	<div class="cuerpo">
+		<div class="barra">
+			<div class="breadcrumbs">
+			</div>
+			<div class="vista">tipo de vista</div>
+			<div class="orden">ordenación</div>
+		</div>
+		<div class="resultados1">
+			<div class="cajetilla">
+				<div class="imagenresultado"><img class="imagenresultado" src="imagenes/civilwar.jpg" alt="La imagen no pudo cargarse.">
+				</div>
+				<div class="textoresultado">
+					<p><b>Capitán América</b></p>
+					<p>texto de la sinópsis del Capitán América shalalala shalalalala shalalala shalala shalalala shalalalala</p>
+				</div>
+				<div><a href="#"><img class="compraresultado" src="imagenes/Comprarentradas.png" alt="La imagen no pudo cargarse."></a>
+				</div>
+			</div>
+			<div class="cajetilla">resultado 2
+			</div>
+			<div class="cajetilla">resultado 3
+			</div>
+			<div class="cajetilla">resultado 4
+			</div>
+			<div class="cajetilla">resultado 5
+			</div>
+			<div class="cajetilla">resultado 6
+			</div>
+			<div class="cajetilla">resultado 7
+			</div>
+			<div class="cajetilla">resultado 8
+			</div>
+		</div>
+	</div>
+
+</body>
+
+<script>
+var index = 0;								//index to determine the number of the slide which appears
+var lastIndex = 0;
+var slides = $('.slider div');				//slide which is in the div at the moment
+var nslides = slides.length;				//number of total slides
+
+function slideCraigslist() {					//This function will identify the index, to create a different animation for
+	 var slide = $('.slider div').eq(index);		//each slide.
+	 var dots = document.getElementsByClassName("dot");								 //"slide" is the following slide in the div
+		 slides.hide();
+		 slide.fadeIn("slow");
+		 dots[lastIndex].classList.remove("active");
+		 dots[index].classList.add("active");
+}
+window.onload = slideCraigslist();
+var automatic = setInterval(function() {		//This function makes the slides pass automaticalle each 5 seconds
+	lastIndex = index;
+	index = index + 1;							//In case the index is higher than the amount of slides -1, it will start again from 0
+	if (index > nslides - 1) {
+		index = 0;
+	}
+	slideCraigslist();
+}, 7000);
+
+$('.arrowright').click(function() {				//Passes slides manually by clicking right arrow.
+	clearInterval(automatic);						//In case the index is higher than the amount of slides -1, it will start again from 0
+	lastIndex = index;
+	index = index + 1;
+	if (index > nslides - 1) {
+		index = 0;
+	}
+	slideCraigslist();
+	automatic = setInterval(function() {		    //This function makes the slides pass automaticalle each 5 seconds
+		lastIndex = index;
+		index = index + 1;							//In case the index is higher than the amount of slides -1, it will start again from 0
+		if (index > nslides - 1) {
+				index = 0;
+		}
+		slideCraigslist();
+		}, 5000);
+});
+
+$('.arrowleft').click(function() {				//Passes slides manually by clicking left arrow.
+	clearInterval(automatic);						//In case the index is lower than 0, it will start again from the last slide
+	lastIndex = index;
+	index = index - 1;
+	if (index < 0) {
+		index = nslides - 1;
+	}
+	slideCraigslist();
+	automatic = setInterval(function() {		    //This function makes the slides pass automaticalle each 5 seconds
+		lastIndex = index;
+		index = index + 1;							//In case the index is higher than the amount of slides -1, it will start again from 0
+		if (index > nslides - 1) {
+				index = 0;
+		}
+		slideCraigslist();
+		}, 5000);
+});
+
+function currentSlide(n) {
+	clearInterval(automatic);
+	lastIndex = index;
+	index = n-1;
+	slideCraigslist();
+	automatic = setInterval(function() {		    //This function makes the slides pass automaticalle each 5 seconds
+		lastIndex = index;
+		index = index + 1;							//In case the index is higher than the amount of slides -1, it will start again from 0
+		if (index > nslides - 1) {
+				index = 0;
+		}
+		slideCraigslist();
+		}, 5000);
+}
+
+//All the calls to the slideUniversities() function are used to find the animation belonging to the slide that is going to be shown.
+
+</script>

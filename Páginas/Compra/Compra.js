@@ -34,7 +34,8 @@ function show_login() {
     $("#menu").css("filter", "blur(5px)");
     $("#cuerpo").css("filter", "blur(5px)");
 }
-    
+
+
 function show_register() {
     $("#login").hide();
     $("#register").show();
@@ -42,6 +43,7 @@ function show_register() {
     $("#menu").css("filter", "blur(5px)");
     $("#cuerpo").css("filter", "blur(5px)");
 }
+
 
 function validate_login() {
     var user = $("#usr_l");
@@ -59,5 +61,20 @@ function validate_login() {
     }
     else {
         password.css("border", "1px solid grey");
+    }
+}
+
+
+function hideSection(n){
+    if (n==1){
+        $("#sectionBody_1").toggle();
+    }
+    
+    else if(n==2){
+        $("#sectionBody_2").toggle();
+    }
+    
+    else if(n==3){
+        $("#sectionBody_3").toggle();
     }
 }

@@ -140,6 +140,31 @@ h3 {
     color: #002b55;
 }
 
+#section_1{
+    background-color: green;
+}
+
+#section_2{
+    background-color: blue;
+}
+
+#section_3{
+    background-color: yellow;
+}
+
+.section{
+    display: block;
+}
+
+.sectionHeader{
+    height: 50px;
+}
+
+.sectionBody{
+    height: 250px;
+    background-color: aliceblue;
+}
+
 .box {
     position: fixed;
     margin-left: 17%;

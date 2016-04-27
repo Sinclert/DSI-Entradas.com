@@ -10,7 +10,15 @@
         <link rel="stylesheet" type="text/css" href="Compra.css">
         <script type="text/javascript" src="../jquery-1.8.3.min.js"></script>
         <script type="text/javascript" src="Compra.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
         <meta charset="UTF-8">
+        <script>
+            $(document).ready(function() {
+                $("#datepicker").datepicker();
+            });
+        </script>
     </head>
 
     <body>
@@ -57,6 +65,37 @@
                 </div>
                 
                 <div id="sectionBody_1" class="sectionBody">
+                    <form id="primerpaso" accept-charset="utf-8" action="enconstruccion.html">
+                        <label id="seleccionhorario">Selección de Horario
+                        </label>
+                        <br>
+                        <label id="textocinepeli">Cine: "nombre-cine"  -  Película: "nombre-pelicula"
+                        </label>
+                        <br>
+                        <label id="lcine">Cine:
+                        </label>
+                        <select id="cine">
+                            <option selected="selected" value="seleccionarcine">Seleccionar Cine</option>
+                            <option value="cinesa">Cinesa</option>
+                            <option value="kinepolis">Kinépolis</option>
+                            <option value="equinoccio">Equinoccio</option>
+                        </select>
+                        <label id="ldia">Día:
+                        </label>
+                        <input id="datepicker" />
+                        <label id="lsesion">Sesión:
+                        </label>
+                        <select id="sesion">
+                            <option selected="selected" value="seleccionarsesion">Seleccionar Sesión</option>
+                            <option value="15:50">15:50</option>
+                            <option value="17:00">17:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="22:00">22:00</option>
+                        </select>
+                        <br>
+                    </form>
+                    <button class="hideButton" onclick="hideSection(1)">Continuar</button>
                 </div>
             </div>
             

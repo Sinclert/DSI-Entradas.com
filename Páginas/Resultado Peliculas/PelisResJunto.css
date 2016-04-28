@@ -155,11 +155,10 @@ select {
 }
 
 #lowersection {
-    float: left;
-    height: auto;
-    width: 90%;
-    margin-left: 5%;
+    float:left;
+    width: 95%;
     display: none;
+    padding-left: 5%;
 }
 
 #lista_cuadrado {
@@ -234,4 +233,71 @@ select {
 .titulo_peli {
     color: #002b55;
     text-decoration: underline;
+}
+
+h2 {
+	text-align: center;
+	line-height: 0.5%;
+    color: #002b55;
+}
+
+
+.box {
+    position: fixed;
+    margin-left: 17%;
+    margin-right: 17%;
+    margin-top: 13%;
+    margin-bottom: 13%;
+	width: 550px;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    display: none;
+    background-color: white;
+}
+
+.box li {
+    white-space: nowrap;
+    list-style-type: none;
+    margin-top: 0.75%;
+    margin-bottom: 0.75%;
+    margin-left: 5%;
+}
+
+
+.box ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+
+input[type="password"], input[type="email"], input[type="text"] {
+    background: transparent;
+    border-width: thin;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border-left: 1%;
+    border-right: 1%;
+    width: 50%;
+    margin-right: 5%;
+    float: right;
+}
+
+.btn2 {
+    background:#0d4168;
+    border-radius:4px;
+    cursor:pointer;
+    font-size:13px;
+    font-weight:bold;
+    padding:4px 10px;
+    text-decoration:none;
+    margin-left: 40%;
+    margin-bottom: 2%;
+    color: white;
+}
+
+.btn2:hover {
+    background-color:#476e9e;
 }

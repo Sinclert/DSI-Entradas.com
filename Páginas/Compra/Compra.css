@@ -178,11 +178,13 @@ h3 {
 
 .sectionHeader{
     height: 50px;
+    text-align: center;
 }
 
 .sectionBody{
     height: 250px;
     background-color: aliceblue;
+    text-align: center;
 }
 
 .box {

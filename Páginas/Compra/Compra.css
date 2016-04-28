@@ -142,14 +142,34 @@ h3 {
 
 #section_1{
     background-color: green;
+    float: left;
+    width: 98%;
+    height: auto;
+    margin-top: 1%;
+    margin-left: 1%;
+    border-radius: 5px;
 }
 
 #section_2{
     background-color: blue;
+    float: left;
+    width: 98%;
+    height: auto;
+    margin-top: 1%;
+    margin-left: 1%;
+    border-radius: 5px;
+    visibility:hidden;
 }
 
 #section_3{
     background-color: yellow;
+    float: left;
+    width: 98%;
+    height: auto;
+    margin-top: 1%;
+    margin-left: 1%;
+    border-radius: 5px;
+    visibility:hidden;
 }
 
 .section{

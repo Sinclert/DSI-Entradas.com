@@ -68,10 +68,28 @@ function validate_login() {
 function hideSection(n){
     if (n==1){
         $("#sectionBody_1").toggle();
+        document.getElementById("section_2").style.visibility="visible"
     }
     
     else if(n==2){
         $("#sectionBody_2").toggle();
+        document.getElementById("section_3").style.visibility="visible"
+    }
+    
+    else if(n==3){
+        $("#sectionBody_3").toggle();
+    }
+}
+
+function showSection(n){
+    if (n==1){
+        $("#sectionBody_1").toggle();
+        document.getElementById("section_2").style.visibility="hidden"
+    }
+    
+    else if(n==2){
+        $("#sectionBody_2").toggle();
+        document.getElementById("section_3").style.visibility="hidden"
     }
     
     else if(n==3){

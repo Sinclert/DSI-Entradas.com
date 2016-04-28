@@ -140,8 +140,22 @@ h3 {
     color: #002b55;
 }
 
+.btn1 {
+    margin-top: 20px;
+    background:#0d4168;
+    border-radius:7px;
+    cursor:pointer;
+    font-size:13px;
+    font-family: "Verdana"; 
+    padding:4px 10px;
+    text-decoration:none;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    color: white;
+}
+
 #section_1{
-    background-color: green;
+    background-color: aliceblue;
     float: left;
     width: 98%;
     height: auto;
@@ -151,40 +165,82 @@ h3 {
 }
 
 #section_2{
-    background-color: blue;
+    background-color: aliceblue;
     float: left;
     width: 98%;
     height: auto;
     margin-top: 1%;
     margin-left: 1%;
     border-radius: 5px;
-    visibility:hidden;
+}
+
+#sectionBody_2 {
+    display: none;
 }
 
 #section_3{
-    background-color: yellow;
+    background-color: aliceblue;
     float: left;
     width: 98%;
     height: auto;
     margin-top: 1%;
     margin-left: 1%;
     border-radius: 5px;
-    visibility:hidden;
 }
 
-.section{
+#sectionBody_3 {
+    display: none;
+}
+
+.section {
     display: block;
 }
 
-.sectionHeader{
+.sectionHeader {
+    background-color: #0d4168;
+    color: white;
     height: 50px;
     text-align: center;
+    line-height: 50px;
+    cursor: pointer;
 }
 
 .sectionBody{
     height: 250px;
     background-color: aliceblue;
     text-align: center;
+}
+
+#textoCinePeli {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#paymentOptions {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    margin-left: 375px;
+    height:225px;
+    width:125px;
+}
+
+.paymentOption {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+#paymentImages {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float:left;
+    height: 225px;
+    width: 125px;
+}
+
+.paymentImage {
+    height: 75px;
+    width: 125px;
 }
 
 .box {

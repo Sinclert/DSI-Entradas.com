@@ -2,8 +2,9 @@
 	DSI PROJECT GROUP NUMBER 4
 */
 
-
 $(document).ready(function () {
+    
+    $("#datepicker").datepicker();
     
     $(document).mouseup(function (e){
         var login = $("#login");
@@ -65,15 +66,25 @@ function validate_login() {
 }
 
 
-function hideSection(n){
+function nextSection(n){
+    if (n==1){
+        $("#sectionBody_1").hide();
+        $("#sectionBody_2").show();
+    }
+    
+    else if(n==2){
+        $("#sectionBody_2").hide();
+        $("#sectionBody_3").show();
+    }
+}
+
+function showSection(n){
     if (n==1){
         $("#sectionBody_1").toggle();
-        document.getElementById("section_2").style.visibility="visible"
     }
     
     else if(n==2){
         $("#sectionBody_2").toggle();
-        document.getElementById("section_3").style.visibility="visible"
     }
     
     else if(n==3){
@@ -81,18 +92,18 @@ function hideSection(n){
     }
 }
 
-function showSection(n){
-    if (n==1){
-        $("#sectionBody_1").toggle();
-        document.getElementById("section_2").style.visibility="hidden"
-    }
-    
-    else if(n==2){
-        $("#sectionBody_2").toggle();
-        document.getElementById("section_3").style.visibility="hidden"
-    }
-    
-    else if(n==3){
-        $("#sectionBody_3").toggle();
-    }
-}
+//function move() {
+//    var elem = document.getElementById("myBar"); 
+//    var width = 1;
+//    var id = setInterval(frame, 10);
+//    function frame() {
+//        if (width >= 100) {
+//            clearInterval(id);
+//        }
+//        else {
+//            width++; 
+//            elem.style.width = width + '%'; 
+//        }
+//    }
+//    alert("Hola");
+//}

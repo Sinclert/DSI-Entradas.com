@@ -80,15 +80,21 @@ function nextSection(n){
 
 function showSection(n){
     if (n==1){
-        $("#sectionBody_1").toggle();
+        $("#sectionBody_2").hide();
+        $("#sectionBody_3").hide();
+        $("#sectionBody_1").show();
     }
     
     else if(n==2){
-        $("#sectionBody_2").toggle();
+        $("#sectionBody_1").hide();
+        $("#sectionBody_3").hide();
+        $("#sectionBody_2").show();
     }
     
     else if(n==3){
-        $("#sectionBody_3").toggle();
+        $("#sectionBody_2").hide();
+        $("#sectionBody_1").hide();
+        $("#sectionBody_3").show();
     }
 }
 

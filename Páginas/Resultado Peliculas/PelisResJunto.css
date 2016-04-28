@@ -139,7 +139,7 @@ hr {
 
 #order {
     float: right;
-    margin-top: 7px;
+    margin-top: 3px;
     margin-right: 0.5%;
 }
 
@@ -159,18 +159,36 @@ select {
     height: auto;
     width: 90%;
     margin-left: 5%;
+    display: none;
 }
 
-#leyenda {
+#lista_cuadrado {
     float: left;
-    height: 20px;
-    width: 120px;
-    margin-left: 2%;
 }
 
-#leyenda p{
+.square {
+    width: 170px;
+    height: 270px;
+    display: inline-block;
+}
+
+.im {
+    width:140px;
+    height:220px;
+    float: left;
+    margin-left: 12px;
+}
+
+.leyenda {
+    float: left;
+    width: 98%;
+}
+
+.leyenda p {
     text-align: center;
     font-size: 12px;
+    color: #002b55;
+    font-weight: bold;
 }
 
 .cuerpo_lista {
@@ -197,7 +215,7 @@ select {
     height: 100px;
     margin-top: 20px;
     margin-left: 110px;
-    margin-right: auto;
+    margin-right: auto;    
 }
 
 .imagenresultado {

@@ -164,6 +164,14 @@ h3 {
     border-radius: 5px;
 }
 
+#cine{
+    margin-right:50px;
+}
+
+#datepicker{
+    margin-right:50px;
+}
+
 #section_2{
     background-color: aliceblue;
     float: left;

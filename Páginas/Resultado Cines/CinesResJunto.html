@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<!-- Done by: DSI PROJECT GROUP NUMBER 4 -->
+
+<html>
+
+    <!-- Header defining the link to the css, the character set and the web title/name -->
+    <head>
+        <title> Cines </title>
+        <link rel="stylesheet" type="text/css" href="CinesResJunto.css">
+        <script type="text/javascript" src="../jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="pelicula.js"></script>
+        <meta charset="UTF-8">
+
+        <script>
+    $(document).ready(function(){
+        $("#lista").click(function(){
+            $("#lowersection").hide();
+            $(".cuerpo_lista").show();
+        });
+        $("#cajas").click(function(){
+            $(".cuerpo_lista").hide();
+            $("#lowersection").show();
+        });
+    });
+</script>
+    </head>
+
+    <body>
+
+        <div id="header">
+            <div id="logo-div">
+                <a href="../Principal/Main.html">
+                    <img id="logo" src="Imagenes/logoentradas.png" alt="La imagen no pudo cargarse.">
+                </a>
+            </div>
+
+            <div class="headerButton">
+                <button id = "regButton" type="button" onclick = "show_register()">Regístrate</button>
+            </div>
+
+            <div class="headerButton">
+                <button id = "initButton" type="button" onclick = "show_login()">Inicia Sesión</button>
+            </div>
+        </div>
+
+
+        <div id = "menu">
+            <table id = "menu-table">
+                <tr>
+                    <td><a href="../Cine/pagCine.html">Cines</a></td>
+                    <td><a href="../Cine/pagCine.html">Musicales</a></td>
+                    <td><a href="../Cine/pagCine.html">Teatros</a></td>
+                    <td><a href="../Cine/pagCine.html">Conciertos</a></td>
+                    <td><a href="../Cine/pagCine.html">Deportes</a></td>
+                    <td><a href="../Cine/pagCine.html">Infantil</a></td>
+                    <td><a href="../Cine/pagCine.html">Exposiciones</a></td>
+                    <td><a href="../Cine/pagCine.html">Promociones</a></td>
+                </tr>
+            </table>
+
+        </div>
+
+
+        <div id="cuerpo">
+            <div id="topsection">
+                <div id="order">
+                    <button id="lista"><img  class="lista" src="Imagenes/list-icon-1.png" alt="La imagen no pudo cargarse."></button>
+                    <button id="cajas"><img  class="lista" src="Imagenes/list-icon-2.png" alt="La imagen no pudo cargarse."></button>
+                     <select>
+                        <option selected="selected" value="seleccionar">Ordenar</option>
+                        <option value="estrenos">Alfabéticamente</option>
+                        <option value="novedades">Opción 2</option>
+                        <option value="cine">Opción 3</option>
+                </select>
+                </div>
+                <div id="breadcrumbs">
+                    <p> <a href="../Principal/Main.html" style="color:#002b55; font-weight: bold">entradas.com</a> > Películas</p>
+                </div>
+                <hr>
+            </div>
+            <div id="lowersection"> 
+                <div id="lista_cuadrado">
+                    <div class = "square">
+                        <div class="im">
+                            <img src="Imagenes/yelmo.jpg" alt="La imagen no pudo cargarse." width="150px" height="150px" style="margin-right:2%; margin-left:2%;">
+                        </div>
+                        <div class="leyenda">
+                            <p> <a href="../Cine/pagCine.html"> Cines Yelmo </a> </p>
+                        </div>
+                    </div>
+                    <div class = "square">
+                        <div class="im">
+                            <img src="Imagenes/kinepolis.jpg" alt="La imagen no pudo cargarse." width="150px" height="150px" style="margin-right:2%; margin-left:2%;">
+                        </div>
+                        <div class="leyenda">
+                            <p> <a href="../Cine/pagCine.html"> Kinépolis </a> </p>
+                        </div>
+                    </div> 
+                    <div class = "square">
+                        <div class="im">
+                            <img src="Imagenes/renoir.jpg" alt="La imagen no pudo cargarse." width="150px" height="120px" style="margin-right:2%; margin-left:2%;">
+                        </div>
+                        <div class="leyenda">
+                            <p> <a href="../Cine/pagCine.html"> Cines Renoir </a> </p>
+                        </div>
+                    </div>
+                    <div class = "square">
+                        <div class="im">
+                            <img src="Imagenes/golem.jpg" alt="La imagen no pudo cargarse." width="150px" height="120px" style="margin-right:2%; margin-left:2%;">
+                        </div>
+                        <div class="leyenda">
+                            <p> <a href="../Cine/pagCine.html"> Cines Golem </a> </p>
+                        </div>
+                    </div>
+                    <div class = "square">
+                        <div class="im">
+                            <img src="Imagenes/cinesa.png" alt="La imagen no pudo cargarse." width="150px" height="150px" style="margin-right:2%; margin-left:2%;">
+                        </div>
+                        <div class="leyenda">
+                            <p> <a href="../Cine/pagCine.html"> Cinesa </a> </p>
+                        </div>
+                    </div>
+                    <div class = "square">
+                        <div class="im">
+                            <img src="Imagenes/verdi.png" alt="La imagen no pudo cargarse." width="150px" height="150px" style="margin-right:2%; margin-left:2%;">
+                        </div>
+                        <div class="leyenda">
+                            <p> <a href="../Cine/pagCine.html"> Verdi </a> </p>
+                        </div>
+                    </div>
+                    <div class = "square">
+                        <div class="im">
+                            <img src="Imagenes/duque.png" alt="La imagen no pudo cargarse." width="150px" height="80px" style="margin-right:2%; margin-left:2%;">
+                        </div>
+                        <div class="leyenda">
+                            <p> <a href="../Cine/pagCine.html"> Duque </a> </p>
+                        </div>
+                    </div>
+                    <div class = "square">
+                        <div class="im">
+                            <img src="Imagenes/cinebox.jpg" alt="La imagen no pudo cargarse." width="150px" height="120px" style="margin-right:2%; margin-left:2%;">
+                        </div>
+                        <div class="leyenda">
+                            <p> <a href="../Cine/pagCine.html"> CineBox </a> </p>
+                        </div>
+                    </div>
+                    <div class = "square">
+                        <div class="im">
+                            <img src="Imagenes/artesiete.png" alt="La imagen no pudo cargarse." width="150px" height="150px" style="margin-right:2%; margin-left:2%;">
+                        </div>
+                        <div class="leyenda">
+                            <p> <a href="../Cine/pagCine.html"> Artesiete </a> </p>
+                        </div>
+                    </div>
+                    <div class = "square">
+                        <div class="im">
+                            <img src="Imagenes/vaguada.png" alt="La imagen no pudo cargarse." width="150px" height="120px" style="margin-right:2%; margin-left:2%;">
+                        </div>
+                        <div class="leyenda">
+                            <p> <a href="../Cine/pagCine.html"> Cines La Vaguada </a> </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    <div class="cuerpo_lista">
+        <div class="resultados1">
+            <div class="cajetilla">
+                <div class="imagenresultado"><img class="imagenresultado" src="imagenes/yelmo.jpg" alt="La imagen no pudo cargarse.">
+                </div>
+                <div class="textoresultado">
+                    <p class="titulo_peli"><b>Cines Yelmo</b></p>
+                    <p style="text-align:justify">Cuando Alicia (Mia Wasikowska) despierta en el País de las Maravillas, la joven protagonista deberá viajar a través de este mundo mágico y... </p>
+                </div>
+            </div>
+            <div class="cajetilla">
+                <div class="imagenresultado"><img class="imagenresultado" src="imagenes/kinepolis.jpg" alt="La imagen no pudo cargarse.">
+                </div>
+                <div class="textoresultado">
+                    <p class="titulo_peli"><b>Kinépolis</b></p>
+                    <p style="text-align:justify">A través de una tecnología revolucionaria que desbloquea sus recuerdos genéticos, Callum Lynch (Michael Fassbender) experimenta las aventuras...</p>
+                </div>
+            </div>
+            <div class="cajetilla">
+                <div class="imagenresultado"><img class="imagenresultado" src="imagenes/renoir.jpg" alt="La imagen no pudo cargarse.">
+                </div>
+                <div class="textoresultado">
+                    <p class="titulo_peli"><b>Cines Renoir</b></p>
+                    <p style="text-align:justify">Superman (Henry Cavill) se ha convertido en la figura más controvertida del mundo. Mientras que muchos siguen creyendo que es un emblema de...</p>
+                </div>
+            </div>
+            <div class="cajetilla">
+                <div class="imagenresultado"><img class="imagenresultado" src="imagenes/golem.jpg" alt="La imagen no pudo cargarse.">
+                </div>
+                <div class="textoresultado">
+                    <p class="titulo_peli"><b>Cines Golem</b></p>
+                    <p style="text-align:justify">Un nuevo ‘statu quo’ provoca la ruptura de los Vengadores. Debido a los daños colaterales del trabajo de este grupo de superhéroes en...</p>
+                </div>
+            </div>
+            <div class="cajetilla">
+                <div class="imagenresultado"><img class="imagenresultado" src="imagenes/cinesa.png" alt="La imagen no pudo cargarse.">
+                </div>
+                <div class="textoresultado">
+                    <p class="titulo_peli"><b>Cinesa</b></p>
+                    <p style="text-align:justify">Después de alistarse en el ejército, Wade Wilson (Ryan Reynolds) comienza a realizar trabajos de mercenario, y acabará siendo agente de las...</p>
+                </div>
+            </div>
+            <div class="cajetilla">
+                <div class="imagenresultado"><img class="imagenresultado" src="imagenes/verdi.png" alt="La imagen no pudo cargarse.">
+                </div>
+                <div class="textoresultado">
+                    <p class="titulo_peli"><b>Verdi</b></p>
+                    <p style="text-align:justify">Dory, la simpática pez azul con serios problemas de memoria es la protagonista de esta nueva aventura en el océano. En su nueva vida en...</p>
+                </div>
+            </div>
+            <div class="cajetilla">
+                <div class="imagenresultado"><img class="imagenresultado" src="imagenes/duque.png" alt="La imagen no pudo cargarse.">
+                </div>
+                <div class="textoresultado">
+                    <p class="titulo_peli"><b>Duque</b></p>
+                    <p style="text-align:justify">Tras ser encarcelados, los siete supervillanos más peligrosos del mundo acceden a colaborar con el gobierno en peligrosas misiones secretas...</p>
+                </div>
+            </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+	</div>
+</div>
+        </div>
+        
+    </body>

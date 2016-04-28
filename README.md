@@ -16,7 +16,7 @@ Guía de ficheros:
 - pagPelicula (.html, .css, .js): documentos asociados a la página de información de una película.
 - PelisRes (.html, .css): página de resultados de películas.
 - PelisResJunto (.html, .css): página de resultados de películas con posibilidad de ordenar en dos formatos, lista y cuadrícula.
-- CinesRes (.html, .css): página de resultados de cines (todavía no implementada).
+- CinesResJunto (.html, .css): página de resultados de cines con posibilidad de ordenar en dos formatos, lista y cuadrícula.
 
 ----------
 

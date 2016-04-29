@@ -52,7 +52,34 @@
 
 
         <div id="cuerpo">
-            
+            <style>
+#myProgress {
+    margin: 20px;
+  position: relative;
+  height: 30px;
+  background-color: #ddd;
+}
+
+#myBar {
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  background-color: #0d4168;
+}
+
+#label {
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+</style>
+
+<div id="myProgress">
+  <div id="myBar">
+    <div id="label">10%</div>
+  </div>
+</div>
+
             <div id="section_1" class="section">
                 <div class="sectionHeader" onclick="showSection(1)">
                     Seleccione día y sesión
@@ -118,7 +145,7 @@
                     
                 </div>
             </div>
-                
+            
         </div>
 
 

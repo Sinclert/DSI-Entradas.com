@@ -67,6 +67,23 @@ function validate_login() {
 
 
 function nextSection(n){
+    var elem = document.getElementById("myBar");
+    var lastWidth = 1;
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+        if (width >= 100 || width > (lastWidth + 33)) {
+            clearInterval(id);
+        }
+        else {
+            width++;
+            elem.style.width = width + '%'; 
+            document.getElementById("label").innerHTML = width * 1  + '%';
+        }
+        
+    lastWidth = width;
+    }
+    
     if (n==1){
         $("#sectionBody_1").hide();
         $("#sectionBody_2").show();

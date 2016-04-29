@@ -155,11 +155,10 @@ select {
 }
 
 #lowersection {
-    float: left;
-    height: auto;
-    width: 90%;
-    margin-left: 5%;
+    float:left;
+    width: 95%;
     display: none;
+    padding-left: 5%;
 }
 
 #lista_cuadrado {

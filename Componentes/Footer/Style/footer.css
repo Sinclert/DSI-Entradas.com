@@ -1,0 +1,47 @@
+footer, .footer {
+    width: 90%;
+    height: 190px;
+    margin: auto;
+    color: #cccccc;
+    background-color: #002b55;
+    font-family: "Verdana";
+    font-size: 12;
+}
+
+.social {
+  height: 40px;
+  width: auto;
+  margin: 3px;
+}
+
+#logo_footer {
+  height: 60px;
+  width: auto;
+}
+
+.redes_footer {
+  float: left;
+  margin-top: 140px;
+  margin-left: -340px;
+}
+
+.list_footer {
+  list-style-type: none;
+  margin: 2px;
+  padding: 0;
+}
+
+.enlace_footer {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.tarjeta_footer {
+  width: 140px;
+  float: left;
+  margin-right: 30px;
+}
+
+.venta_tfno {
+  float: right;
+}

@@ -200,7 +200,7 @@ select option {
   	height: 345px;
 	padding: 0;
 }
-/*Sets no border and no background for the table data of the .slider table. 
+/*Sets no border and no background for the table data of the .slider table.
 .slider, td{
 	border:none;
 	background-color: none;
@@ -212,6 +212,7 @@ select option {
 .arrow{
 	width: 40px;
 	height: 80px;
+	padding-top: 140px;
 }
 .bg{
 	background-color: #021b2f;
@@ -219,12 +220,19 @@ select option {
 .arrowbanner{
 	margin-left: 4px;
 	position: relative;
-	top: -220px;
+	top: -350px;
+	width: 40px;
+	height: 100%;
 }
 .arrowbanner2{
 	position: relative;
 	left: 980px;
-	top: -300px;
+	top: -702px;
+	width: 40px;
+	height: 100%;
+}
+.arrowbanner:hover, .arrowbanner2:hover{
+	cursor: pointer;
 }
 /* The dots/bullets/indicators */
 .dot {

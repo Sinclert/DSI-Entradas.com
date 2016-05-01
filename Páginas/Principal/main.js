@@ -42,7 +42,7 @@ $(document).ready(function () {
             index = 0;
         }
         slideCraigslist();
-    }, 7000);
+    }, 5000);
 
     $('#arrowright').click(function() {				//Passes slides manually by clicking right arrow.
         clearInterval(automatic);						//In case the index is higher than the amount of slides -1, it will start again from 0

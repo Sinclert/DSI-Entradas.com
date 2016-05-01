@@ -208,13 +208,18 @@ select {
 }
 
 .cajetilla{
-    background-color: #e1e1e1;
     float: left;
     width: 800px;
     height: 100px;
     margin-top: 20px;
     margin-left: 110px;
-    margin-right: auto;    
+    margin-right: auto; 
+    font-size: 12px;   
+}
+
+div.cajetilla:hover{
+    background-color: #fbb900;
+    color: white;
 }
 
 .imagenresultado {

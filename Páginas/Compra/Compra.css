@@ -123,6 +123,26 @@ hr {
 	-webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
+#myProgress {
+    margin: 20px;
+    position: relative;
+    height: 30px;
+    background-color: #ddd;
+}
+
+#myBar {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: #0d4168;
+}
+
+#label {
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+
 p {
 	margin-right: 1%;
 	font-size: 12px;
@@ -154,7 +174,7 @@ h3 {
     color: white;
 }
 
-#section_1{
+#section_1 {
     background-color: aliceblue;
     float: left;
     width: 98%;
@@ -164,29 +184,29 @@ h3 {
     border-radius: 5px;
 }
 
-#cine{
-    margin-right:50px;
-}
-
-#datepicker{
-    margin-right:50px;
-}
-
-#section_2{
-    background-color: aliceblue;
-    float: left;
-    width: 98%;
-    height: auto;
-    margin-top: 1%;
-    margin-left: 1%;
-    border-radius: 5px;
-}
-
-#sectionBody_2 {
+#sectionBody_1 {
     display: none;
 }
 
-#section_3{
+#cine {
+    margin-right:50px;
+}
+
+#datepicker {
+    margin-right:50px;
+}
+
+#section_2 {
+    background-color: aliceblue;
+    float: left;
+    width: 98%;
+    height: auto;
+    margin-top: 1%;
+    margin-left: 1%;
+    border-radius: 5px;
+}
+
+#section_3 {
     background-color: aliceblue;
     float: left;
     width: 98%;
@@ -197,6 +217,20 @@ h3 {
 }
 
 #sectionBody_3 {
+    display: none;
+}
+
+#section_4 {
+    background-color: aliceblue;
+    float: left;
+    width: 98%;
+    height: auto;
+    margin-top: 1%;
+    margin-left: 1%;
+    border-radius: 5px;
+}
+
+#sectionBody_4 {
     display: none;
 }
 

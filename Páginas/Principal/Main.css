@@ -42,6 +42,28 @@ body {
     background-color: #397090;
 }
 
+#buscador {
+    float: left;
+    margin-top: 20px;
+	width: 500px;
+	height: 30px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+#textoBusqueda {
+    float: left;
+	width: 430px;
+    height: 25px;
+    background-color: aliceblue;
+}
+
+#botonBusqueda{
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+
 #initButton {
     background-color: #0d4168;
 	color: white;

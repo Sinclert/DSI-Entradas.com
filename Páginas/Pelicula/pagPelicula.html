@@ -78,31 +78,55 @@
                 <div id="sinopsis">
                     <h3> Sinopsis </h3>
                     <hr>
-                    <p> Capitán América: Civil War' sigue a Steve Rogers liderando al nuevo equipo de Vengadores en sus continúos esfuerzos para mantener a salvo a la humanidad. Pero después de los daños colaterales de otro incidente en el que el grupo de superhéroes está involucrado, la presión política instala un sistema de responsabilidad encabezado por el Gobierno para supervisar y dirigir al equipo.<br><br>El nuevo <i>status quo</i> provoca la ruptura de los Vengadores y da como resultado dos bandos: uno liderado por Steve Rogers y su deseo de que los superhéroes sigan siendo libres para defender a la humanidad sin la intromisión del Gobierno y otro por Tony Stark que decide apoyar la decisión de la clase dirigente.
+                    <p style="margin-left:2%; margin-right:2%;"> Capitán América: Civil War' sigue a Steve Rogers liderando al nuevo equipo de Vengadores en sus continúos esfuerzos para mantener a salvo a la humanidad. Pero después de los daños colaterales de otro incidente en el que el grupo de superhéroes está involucrado, la presión política instala un sistema de responsabilidad encabezado por el Gobierno para supervisar y dirigir al equipo.<br><br>El nuevo <i>status quo</i> provoca la ruptura de los Vengadores y da como resultado dos bandos: uno liderado por Steve Rogers y su deseo de que los superhéroes sigan siendo libres para defender a la humanidad sin la intromisión del Gobierno y otro por Tony Stark que decide apoyar la decisión de la clase dirigente.
                     </p>
 
                 </div>
 
             </div>
-
-            <div id="elegirCine">
-                <select>
-                    <option selected="selected" value="seleccionar">Seleccionar cine</option>
-                    <option value="estrenos">Yelmo Cines - Tresaguas</option>
-                    <option value="novedades">Yelmo Cines - Planetocio</option>
-                    <option value="cine">Yelmo Cines - Isla Azul</option>
-                    <option value="teatro">Yelmo Cines - Plenilunio</option>
-                    <option value="pelicula">Yelmo Cines - Rivas Futura</option>
-                    <option value="concierto">Yelmo Cines - Plaza Norte 2</option>
-                </select>
-
-                <a href="../Compra/Compra.html">
-                    <button name="submitbtn" id = "btn1" value="Comprar Entradas">Comprar Entradas</button>
-                </a>
+            <div class="end">
+                <hr>
             </div>
-
             
-            <div id="end">
+            <div id="scroll_section">
+                <div class="box">
+                    <h3>Localidad</h3>
+                    <hr>
+                    <div class="scroll_box">
+                        <ul>
+                            <li><a id="default" onclick="highlite(this);" href="#"> Select </a></li>
+                            <li><a onclick="highlite(this);" href="#"> Madrid </a></li>
+                            <li><a onclick="highlite(this);" href="#"> Rivas </a></li>
+                            <li><a onclick="highlite(this);" href="#"> San Martín  </a></li>
+                            <li><a onclick="highlite(this);" href="#"> Villalba </a></li>
+                            <li><a onclick="highlite(this);" href="#"> Humanes </a></li>
+                            <li><a onclick="highlite(this);" href="#"> Majadahonda </a></li>
+                            <li><a onclick="highlite(this);" href="#"> Leganés </a></li>
+                            <li><a onclick="highlite(this);" href="#"> Las Rozas </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <h3>Cine</h3>
+                    <hr>
+                    <div class="scroll_box">
+                        <ul>
+                            <li><a id="default" onclick="highlite(this);" href="#"> Select </a></li>
+                            <li><a onclick="highlite(this);" href="#"> Yelmo </a></li>
+                            <li><a onclick="highlite(this);" href="#"> Cinessa </a></li>
+                            <li><a onclick="highlite(this);" href="#"> Golem </a></li>
+                            <li><a onclick="highlite(this);" href="#"> Miau </a></li>
+                            <li><a onclick="highlite(this);" href="#"> Patata </a></li>
+                            <li><a onclick="highlite(this);" href="#"> Deadpool </a></li>
+                            <li><a onclick="highlite(this);" href="#"> Estrella </a></li>
+                            <li><a onclick="highlite(this);" href="#"> Kinépolis </a></li>
+                            <li><a onclick="highlite(this);" href="#"> Duque </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                        
+            <div class="end">
                 <hr>
             </div>
 
@@ -194,7 +218,7 @@
                 </li>
             </ul>
             <button name="submitbtn" class = "btn2" onclick="validate_reg()">Regístrate</button>
-
+            
         </div>
     </body>
 

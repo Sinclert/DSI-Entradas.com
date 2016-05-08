@@ -266,11 +266,11 @@ h3 {
 }
 
 #sesiones {
-    width: 98%;
-    height: auto;
-    margin-left: 1%;
-    margin-top: 1%;
     float: left;
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 1%;
     margin-bottom: 1%;
     border-radius: 5px;
     display: none;
@@ -522,6 +522,10 @@ footer, .footer {
     text-align: center;
     padding: 3px;
     border-radius: 5px;
+}
+
+#seat-map {
+    margin-left: 50px;
 }
 
 .booking-details {

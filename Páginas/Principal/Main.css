@@ -230,9 +230,11 @@ select option {
 	height: 80px;
 	padding-top: 140px;
 }
+
 .bg {
 	background-color: #021b2f;
 }
+
 .arrowbanner {
 	margin-left: 4px;
 	position: relative;
@@ -240,6 +242,7 @@ select option {
 	width: 40px;
 	height: 100%;
 }
+
 .arrowbanner2 {
 	position: relative;
 	left: 980px;
@@ -247,9 +250,11 @@ select option {
 	width: 40px;
 	height: 100%;
 }
+
 .arrowbanner:hover, .arrowbanner2:hover{
 	cursor: pointer;
 }
+
 /* The dots/bullets/indicators */
 .dot {
   cursor:pointer;

@@ -305,8 +305,9 @@ input[type="password"], input[type="email"], input[type="text"] {
     height: 150px;
     margin-top: 5px;
     border:1px solid #ccc;
-    overflow:auto;
+    overflow: auto;
     float: left;
+    cursor: pointer;
 }
 
 ul {
@@ -350,8 +351,7 @@ li {
 }
 
 #sesiones tr td:nth-child(odd) {
-    background-color: #5c99bc
-;
+    background-color: #5c99bc;
     color: black;
 }
 
@@ -360,11 +360,6 @@ li {
     color: white;
     font-weight: normal;
     border-radius: 3px;
-}
-
-.end {
-	float: left;
-	width: 98%;
 }
 
 footer, .footer {

@@ -5,7 +5,6 @@ body {
 	background-color: #cccccc;
 	font-family: "Verdana";
 	width: 1024px;
-	height: auto;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -133,7 +132,7 @@ a {
 #cuerpo {
     min-width: 1024px;
     float: left;
-	padding-top: 0;
+    font-size: 12px;
     background-color: white;
 	-webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
@@ -370,11 +369,6 @@ h2 {
 	color: #002b55;
 }
 
-h3 {
-	line-height: 1%;
-	text-align: center;
-}
-
 .box {
     position: fixed;
     margin-left: 17%;
@@ -450,38 +444,38 @@ footer, .footer {
 }
 
 #logo_footer {
-  height: 60px;
-  width: auto;
+    height: 60px;
+    width: auto;
 }
 
 .redes_footer {
-  float: left;
-  margin-top: 140px;
-  margin-left: -290px;
+    float: left;
+    margin-top: 140px;
+    margin-left: -290px;
 }
 
 .list_footer {
-  list-style-type: none;
-  margin: 2px;
-  margin-left: 50px;
-  font-size: 11px;
-  padding: 0;
-  width: 150px;
+    list-style-type: none;
+    margin: 2px;
+    margin-left: 50px;
+    font-size: 11px;
+    padding: 0;
+    width: 150px;
 }
 
 .enlace_footer {
-  text-decoration: none;
-  color: #ffffff;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .tarjeta_footer {
-  width: 140px;
-  float: left;
-  margin-right: 30px;
+    width: 140px;
+    float: left;
+    margin-right: 30px;
 }
 
 .venta_tfno {
-  float: right;
-  margin-right: 50px;
-   font-size: 11px;
+    float: right;
+    margin-right: 50px;
+    font-size: 11px;
 }

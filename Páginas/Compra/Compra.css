@@ -140,9 +140,8 @@ hr {
 #cuerpo {
     min-width: 1024px;
     float: left;
-	padding-top: 0;
     background-color: aliceblue;
-    font-size: 14px;
+    font-size: 12px;
 	-webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -196,7 +195,7 @@ h3 {
 }
 
 .btn1:hover {
-  background-color:#476e9e;
+    background-color:#476e9e;
 }
 
 #section_1 {
@@ -205,10 +204,6 @@ h3 {
     margin-top: 1%;
     margin-left: 1%;
     border-radius: 5px;
-}
-
-#sectionBody_1 {
-    display: none;
 }
 
 #cine {
@@ -221,6 +216,10 @@ h3 {
     margin-top: 1%;
     margin-left: 1%;
     border-radius: 5px;
+}
+
+#sectionBody_2 {
+    display: none;
 }
 
 #section_3 {
@@ -256,6 +255,7 @@ h3 {
     background-color: #0d4168;
     color: white;
     height: 50px;
+    font-size: 14px;
     text-align: center;
     line-height: 50px;
     cursor: pointer;
@@ -311,8 +311,9 @@ h3 {
 .box2 {
     width: 40%;
     float: left;
-    margin-left: 7%; 
+    margin-left: 7%;
 }
+
 .scroll_box {
     width: 100%;
     height: 150px;
@@ -321,6 +322,7 @@ h3 {
     overflow: auto;
     float: left;
     cursor: pointer;
+    background-color: white;
 }
 
 ul {
@@ -347,16 +349,17 @@ li {
 }
 
 .paymentOption {
+    float: left;
+    width: 100%;
     margin-top: 30px;
     margin-bottom: 25px;
-    float: left;
     margin-left: 10px;
 }
 
 #paymentImages {
-    margin-top: 10px;
-    margin-left: 30px;
     float:left;
+    margin-top: 10px;
+    margin-left: 30px;  
     height: 225px;
     width: 125px;
 }

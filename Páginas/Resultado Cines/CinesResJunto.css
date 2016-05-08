@@ -141,7 +141,7 @@ hr {
 #cuerpo {
     min-width: 1024px;
     float: left;
-	padding-top: 0;
+    font-size: 12px;
     background-color: white;
 	-webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }

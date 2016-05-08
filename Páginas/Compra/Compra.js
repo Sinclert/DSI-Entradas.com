@@ -1,6 +1,4 @@
-/*Done by:
-	DSI PROJECT GROUP NUMBER 4
-*/
+/*Done by: DSI PROJECT GROUP NUMBER 4 */
 
 var price = 10;
 var current;
@@ -215,11 +213,11 @@ function creditCard(){
     informationBox.css("visibility", "visible");
 }
 
+
 function paypal(){
-    
     window.open("https://www.paypal.com/signin/", "blank");
     var informationBox = $("#paymentInformation");
-    informationBox.css("visibility", "hidden");
+    informationBox.css("visibility", "hidden", 400);
 }
 
 

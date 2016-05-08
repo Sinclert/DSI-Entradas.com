@@ -141,7 +141,7 @@ hr {
 #cuerpo {
     min-width: 1024px;
     float: left;
-	padding-top: 0;
+    font-size: 12px;
     background-color: white;
 	-webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
@@ -151,7 +151,6 @@ hr {
     margin-top: 5px;
     margin-left: 5%;
     margin-right: 5%;
-    height: auto;
     width: 90%;
     font-size: 14px;
 }
@@ -197,9 +196,9 @@ select {
 }
 
 .im {
-    width:140px;
-    height:220px;
     float: left;
+    width: 140px;
+    height: 220px;
     margin-left: 12px;
 }
 
@@ -268,7 +267,6 @@ h2 {
 	line-height: 0.5%;
     color: #002b55;
 }
-
 
 .box {
     position: fixed;

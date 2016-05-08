@@ -5,9 +5,6 @@
 
 $(document).ready(function () {
     
-    /* Carrousel script */
-    $('#liquid1').liquidcarousel({height:129, duration:100, hidearrows:false});
-    
     $(document).mouseup(function (e){
         var login = $("#login");
         var register = $("#register");

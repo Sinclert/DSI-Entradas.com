@@ -147,11 +147,11 @@ hr {
 
 #infoP {
 	float: left;
-	width: 95%;
+	width: 98%;
 	height: auto;
-	background-color: #e6e6e6;
+	background-color: #f5f2f2;
 	margin-top: 1%;
-	margin-left: 2.5%;
+	margin-left: 1%;
 	border-radius: 5px;
 }
 
@@ -182,15 +182,15 @@ p {
 }
 
 #btn1 {
-  background:#0d4168;
-  border-radius:7px;
-  cursor:pointer;
-  font-size:13px;
-  font-family: "Verdana";
-  text-decoration:none;
-  margin-left: 0.5%;
-  margin-bottom: 0.5%;
-  color: white;
+    background:#0d4168;
+    border-radius:7px;
+    cursor:pointer;
+    font-size:13px;
+    font-family: "Verdana";
+    text-decoration:none;
+    margin-left: 0.5%;
+    margin-bottom: 0.5%;
+    color: white;
 }
 
 #imagenes {
@@ -325,12 +325,11 @@ li {
 }
 
 #sesiones {
-    width: 95%;
+    width: 98%;
     height: auto;
-    margin-left: 2.5%;
+    margin-left: 1%;
     margin-top: 1%;
     float: left;
-    background-color:  #e6e6e6;
     margin-bottom: 1%;
     display: none;
     border-radius: 5px;

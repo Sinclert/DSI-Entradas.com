@@ -363,7 +363,7 @@ h3 {
 
 
 input[type="password"], input[type="email"], input[type="text"] {
-    background: transparent;
+    background: white;
     border-width: thin;
     border-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;

@@ -209,14 +209,15 @@ h3 {
 
 #sectionBody_1 {
     display: none;
+    height: 400px;
 }
 
 #cine {
-    margin-right:50px;
+    margin-right: 50px;
 }
 
 #datepicker {
-    margin-right:50px;
+    margin-right: 50px;
 }
 
 #section_2 {
@@ -237,6 +238,7 @@ h3 {
 
 #sectionBody_3 {
     display: none;
+    height: 400px;
 }
 
 #section_4 {
@@ -250,6 +252,7 @@ h3 {
 
 #sectionBody_4 {
     display: none;
+    height: 400px;
 }
 
 .section {

@@ -120,17 +120,44 @@
 
                 <div id="sectionBody_3" class="sectionBody">
                     <form id = "paymentOptions">
-                            <input class= "paymentOption" type="radio" name="payment" value="mastercard">Mastercard<br>
-                            <input class= "paymentOption" type="radio" name="payment" value="visa">Visa<br>
-                            <input class= "paymentOption" type="radio" name="payment" value="paypal">Paypal
+                        <div class= "paymentOption">
+                            <input  type="radio" name="payment" onclick = "creditCard()" value="mastercard"> Mastercard
+                        </div>
+                        
+                        <div class= "paymentOption">
+                            <input  type="radio" name="payment" onclick = "creditCard()" value="visa"> Visa
+                        </div>
+                        
+                        <div class= "paymentOption">
+                            <input  type="radio" name="payment" onclick = "paypal()" value="paypal"> Paypal
+                        </div>
+                        
                     </form>
                         <div id ="paymentImages">
                             <img class="paymentImage" src="Imagenes/MasterCard.png" alt="La imagen no pudo cargarse">
                             <img class="paymentImage" src="Imagenes/Visa.png" alt="La imagen no pudo cargarse">
                             <img class="paymentImage" src="Imagenes/Paypal.png" alt="La imagen no pudo cargarse">
                         </div>
-                        <button class="btn1" onclick="nextSection(3)">Continuar</button>
-
+                    
+                        <div id ="paymentInformation">
+                            <div class="paymentBox">
+                                Número de cuenta <input type="text" value=""/>
+                            </div>
+                                 
+                            <div class="paymentBox">
+                                Titular de la tarjeta <input type="text" value=""/>
+                            </div>
+                            
+                            <div class="paymentBox">
+                                CVV <input type="text" value=""/>
+                            </div>
+                            
+                            <div class="paymentBox">
+                                Fecha caducidad <input type="text" value=""/>
+                            </div>
+                        </div>
+                     
+                    <button class="btn1" onclick="nextSection(3)">Continuar</button>
                 </div>
             </div>
             
@@ -140,6 +167,21 @@
                 </div>
 
                 <div id="sectionBody_4" class="sectionBody">
+                    <br><br>
+                    <b>El resumen de su compra puede ser visto en la cabecera de las secciones anteriores</b>
+                    
+                    <div id="buyInformation">
+                        <div class="buyBox">
+                            Nombre del comprador <input type="text"  value=""/>
+                        </div>
+                        <div class="buyBox">
+                            Cuenta de correo electronico <input type="text" value=""/>
+                        </div>
+                        <div class="buyBox">
+                            Confirme su cuenta de correo <input type="text" value=""/>
+                        </div>
+                    </div>
+                    
                     <button class="btn1">Comprar</button>
                 </div>
             </div>

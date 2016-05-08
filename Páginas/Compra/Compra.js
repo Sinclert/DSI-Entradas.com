@@ -82,18 +82,18 @@ function nextSection(n){
     }
     
     if (n==1){
-        $("#sectionBody_1").hide();
-        $("#sectionBody_2").show();
+        $("#sectionBody_1").hide(400);
+        $("#sectionBody_2").show(400);
     }
     
     if (n==2){
-        $("#sectionBody_2").hide();
-        $("#sectionBody_3").show();
+        $("#sectionBody_2").hide(400);
+        $("#sectionBody_3").show(400);
     }
     
     else if(n==3){
-        $("#sectionBody_3").hide();
-        $("#sectionBody_4").show();
+        $("#sectionBody_3").hide(400);
+        $("#sectionBody_4").show(400);
     }
 }
 
@@ -101,30 +101,43 @@ function nextSection(n){
 function showSection(n){
     
     if (n==1){
-        $("#sectionBody_2").hide();
-        $("#sectionBody_3").hide();
-        $("#sectionBody_4").hide();
-        $("#sectionBody_1").show();
+        $("#sectionBody_2").hide(400);
+        $("#sectionBody_3").hide(400);
+        $("#sectionBody_4").hide(400);
+        $("#sectionBody_1").show(400);
     }
     
     else if(n==2){
-        $("#sectionBody_1").hide();
-        $("#sectionBody_3").hide();
-        $("#sectionBody_4").hide();
-        $("#sectionBody_2").show();
+        $("#sectionBody_1").hide(400);
+        $("#sectionBody_3").hide(400);
+        $("#sectionBody_4").hide(400);
+        $("#sectionBody_2").show(400);
     }
     
     else if(n==3){
-        $("#sectionBody_1").hide();
-        $("#sectionBody_2").hide();
-        $("#sectionBody_4").hide();
-        $("#sectionBody_3").show();
+        $("#sectionBody_1").hide(400);
+        $("#sectionBody_2").hide(400);
+        $("#sectionBody_4").hide(400);
+        $("#sectionBody_3").show(400);
     }
     
     else if(n==4){
-        $("#sectionBody_1").hide();
-        $("#sectionBody_2").hide();
-        $("#sectionBody_3").hide();
-        $("#sectionBody_4").show();     
+        $("#sectionBody_1").hide(400);
+        $("#sectionBody_2").hide(400);
+        $("#sectionBody_3").hide(400);
+        $("#sectionBody_4").show(400);   
     }
+}
+
+
+function creditCard(){
+    var informationBox = $("#paymentInformation");
+    informationBox.css("visibility", "visible");
+}
+
+function paypal(){
+    
+    window.open("https://www.paypal.com/signin/", "blank");
+    var informationBox = $("#paymentInformation");
+    informationBox.css("visibility", "hidden");
 }

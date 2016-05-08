@@ -188,6 +188,7 @@ select {
 }
 
 .square {
+    margin-top: 20px;
     width: 170px;
     height: 270px;
     display: inline-block;
@@ -215,7 +216,6 @@ select {
 .cuerpo_lista {
     background-color: white;
     width: 1024px;
-    height: 1024px;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -223,13 +223,12 @@ select {
 
 .resultados1 {
     width: 1024px;
-    height: 1024px;
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.cajetilla{
+.cajetilla {
     float: left;
     width: 800px;
     height: 100px;

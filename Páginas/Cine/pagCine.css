@@ -244,70 +244,32 @@ h3 {
 	color:black;
 }
 
-#elegirCine {
-	float: left;
-	width: 98%;
-	margin-top: 1%;
-	margin-left: 1%;
-}
-
-select {
-	margin-left: 30%;
-}
-
-#btn1 {
-  background:#0d4168;
-  border-radius:7px;
-  cursor:pointer;
-  font-size:13px;
-  font-family: "Verdana";
-  padding:4px 10px;
-  text-decoration:none;
-  margin-left: 2%;
-  margin-bottom: 2%;
-  color: white;
-}
-
-#btn1:hover {
-  background-color:#397090;
-}
-
-#btn1:active {
-  position:relative;
-  top:1px;
-}
-
 #imagenes {
-  margin-top: 25px;
+    margin-top: 25px;
     margin-bottom: 30px;
-  margin-left: 1%;
+    margin-left: 1%;
 }
 
 h2 {
-  text-align: center;
-  line-height: 0.5%;
+    text-align: center;
+    line-height: 0.5%;
     color: #002b55;
 }
 
 h3 {
-  line-height: 1%;
-  text-align: center;
+    line-height: 1%;
+    text-align: center;
     color: #002b55;
 }
 
-#elegirCine {
-  float: left;
-  width: 98%;
-  margin-top: 1%;
-  margin-left: 1%;
-}
-
-select {
-  margin-left: 30%;
+#estrenos {
+    float: left;
+    margin-top: 10px;
+    width: 100%;
 }
 
 .im {
-  width:160px;
+    width:160px;
     height:259px;
 }
 

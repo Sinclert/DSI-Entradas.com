@@ -187,20 +187,10 @@ p {
   cursor:pointer;
   font-size:13px;
   font-family: "Verdana";
-  padding:4px 10px;
   text-decoration:none;
-  margin-left: 2%;
-  margin-bottom: 2%;
+  margin-left: 0.5%;
+  margin-bottom: 0.5%;
   color: white;
-}
-
-#btn1:hover {
-  background-color:#397090;
-}
-
-#btn1:active {
-  position:relative;
-  top:1px;
 }
 
 #imagenes {
@@ -219,13 +209,6 @@ h3 {
 	line-height: 1%;
 	text-align: center;
     color: #002b55;
-}
-
-#elegirCine {
-	float: left;
-	width: 98%;
-	margin-top: 1%;
-	margin-left: 1%;
 }
 
 select {
@@ -306,10 +289,34 @@ li {
     background-color:  #e6e6e6;
     margin-bottom: 1%;
     display: none;
+    border-radius: 5px;
 }
 
 #sesiones table {
     width: 100%;
+    background-color: transparent;
+}
+
+#sesiones table tr td {
+    border-radius: 3px;
+}
+
+#sesiones tr td:nth-child(even) {
+    background-color: transparent;
+    color: black;
+}
+
+#sesiones tr td:nth-child(odd) {
+    background-color: #5c99bc
+;
+    color: black;
+}
+
+#sesiones tr th {
+    background-color: #002b55;
+    color: white;
+    font-weight: normal;
+    border-radius: 3px;
 }
 
 .end {

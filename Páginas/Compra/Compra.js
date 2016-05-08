@@ -264,11 +264,8 @@ function show() {
     }
 }
 
-<<<<<<< HEAD
 
 /*
-=======
->>>>>>> origin/master
 function validarPago() {
     var numero = document.forms["myForm"]["numTarj"].value;
     var titular = document.forms["myForm"]["titTarj"].value;
@@ -282,8 +279,4 @@ function validarPago() {
     else{
         nextSection(3);
     }
-<<<<<<< HEAD
 */
-=======
-}
->>>>>>> origin/master

@@ -12,6 +12,7 @@
         <script type="text/javascript" src="Compra.js"></script>
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="jquery.seat-charts.min.js"></script> 
         <meta charset="UTF-8">
     </head>
 
@@ -40,8 +41,6 @@
             </div>
         </div>
         
-
-
 
         <div id = "menu">
             <table id = "menu-table">
@@ -109,6 +108,23 @@
                 </div>
 
                 <div id="sectionBody_2" class="sectionBody">
+                    
+                   <div class="demo">
+                       <div id="seat-map">
+                           <div class="front">PANTALLA</div>
+                       </div>
+                       
+                       <div class="booking-details">
+                          <p>Butacas: </p>
+                          <ul id="selected-seats"></ul>
+                          <p>Tickets: <span id="counter">0</span></p>
+                          <p>Total: <b>$<span id="total">0</span></b></p>
+                          <div id="legend"></div>
+                       </div>
+                       
+                       <div style="clear:both"></div>
+                    </div>
+                    
                     <button class="btn1" onclick="nextSection(2)">Continuar</button>
                 </div>
             </div>
@@ -175,7 +191,7 @@
                             Nombre del comprador <input type="text"  value=""/>
                         </div>
                         <div class="buyBox">
-                            Cuenta de correo electronico <input type="text" value=""/>
+                            Cuenta de correo electrónico <input type="text" value=""/>
                         </div>
                         <div class="buyBox">
                             Confirme su cuenta de correo <input type="text" value=""/>

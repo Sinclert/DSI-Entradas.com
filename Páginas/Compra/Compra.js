@@ -219,9 +219,6 @@ function paypal(){
     informationBox.css("visibility", "hidden");
 }
 
-<<<<<<< HEAD
-function validarPago() {
-=======
 var current;
 
 function highlite(el){
@@ -254,8 +251,7 @@ function show() {
     }
 }
 
-/*function validarPago() {
->>>>>>> origin/master
+function validarPago() {
     var numero = document.forms["myForm"]["numTarj"].value;
     var titular = document.forms["myForm"]["titTarj"].value;
     var cvv = document.forms["myForm"]["cvv"].value;

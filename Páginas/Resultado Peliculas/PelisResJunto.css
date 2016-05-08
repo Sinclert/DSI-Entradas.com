@@ -1,3 +1,5 @@
+/* Done by: DSI PROJECT GROUP NUMBER 4 */
+
 body {
     margin: 0px;
 	background-color: #cccccc;
@@ -172,8 +174,8 @@ hr {
 }
 
 select {
-    display:table-cell;
-    vertical-align:middle;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 #lowersection {
@@ -327,6 +329,7 @@ input[type="password"], input[type="email"], input[type="text"] {
 .btn2:hover {
     background-color:#476e9e;
 }
+
 footer, .footer {
     width: 100%;
     height: 190px;
@@ -346,38 +349,38 @@ footer, .footer {
 }
 
 #logo_footer {
-  height: 60px;
-  width: auto;
+    height: 60px;
+    width: auto;
 }
 
 .redes_footer {
-  float: left;
-  margin-top: 140px;
-  margin-left: -290px;
+    float: left;
+    margin-top: 140px;
+    margin-left: -290px;
 }
 
 .list_footer {
-  list-style-type: none;
-  margin: 2px;
-  margin-left: 50px;
-  font-size: 11px;
-  padding: 0;
-  width: 150px;
+    list-style-type: none;
+    margin: 2px;
+    margin-left: 50px;
+    font-size: 11px;
+    padding: 0;
+    width: 150px;
 }
 
 .enlace_footer {
-  text-decoration: none;
-  color: #ffffff;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .tarjeta_footer {
-  width: 140px;
-  float: left;
-  margin-right: 30px;
+    width: 140px;
+    float: left;
+    margin-right: 30px;
 }
 
 .venta_tfno {
-  float: right;
-  margin-right: 50px;
-   font-size: 11px;
+    float: right;
+    margin-right: 50px;
+    font-size: 11px;
 }

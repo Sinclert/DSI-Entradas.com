@@ -149,7 +149,6 @@ hr {
 	float: left;
 	width: 100%;
 	height: auto;
-	background-color: white;
 	-webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -157,7 +156,7 @@ hr {
 	float: left;
 	width: 98%;
 	height: auto;
-	background-color: #d5d2d2;
+	background-color: #f5f2f2;
 	margin-top: 1%;
 	margin-left: 1%;
 	border-radius: 5px;

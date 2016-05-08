@@ -62,12 +62,34 @@ function validate_login() {
     }
 }
 
-var current = document.getElementById('default');
+var current;
 
 function highlite(el){
 	if (current != null){
 		current.className = "";
+        current.style.backgroundColor="transparent";
 	}
 	el.className = "highlite";
+    el.style.backgroundColor="#fbb900";
 	current = el;
+    show();
+}
+
+var current2;
+
+function highliteB(el){
+	if (current2 != null){
+		current2.className = "";
+        current2.style.backgroundColor="transparent";
+	}
+	el.className = "highlite";
+    el.style.backgroundColor="#fbb900";
+	current2 = el;
+    show();
+}
+
+function show() {
+    if (current != null && current2 != null){
+        document.getElementById("sesiones").style.display="inline-block";
+    }
 }

@@ -265,6 +265,7 @@ input[type="password"], input[type="email"], input[type="text"] {
     height: auto;
     width: 98%;
     margin-left: 1%;
+    margin-bottom: 1%;
 }
 .box {
     height: auto;
@@ -296,12 +297,19 @@ li {
     background-color: #fbb900;
 }
 
-.scroll_box ul li a.highlite {
-    background-color: #fbb900;
+#sesiones {
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+    margin-top: 1%;
+    float: left;
+    background-color:  #e6e6e6;
+    margin-bottom: 1%;
+    display: none;
 }
 
-.scroll_box ul li a:active{
-    background-color: #fbb900;
+#sesiones table {
+    width: 100%;
 }
 
 .end {

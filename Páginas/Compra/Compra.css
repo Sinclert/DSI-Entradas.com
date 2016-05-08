@@ -209,14 +209,9 @@ h3 {
 
 #sectionBody_1 {
     display: none;
-    height: 400px;
 }
 
 #cine {
-    margin-right: 50px;
-}
-
-#datepicker {
     margin-right: 50px;
 }
 
@@ -238,7 +233,6 @@ h3 {
 
 #sectionBody_3 {
     display: none;
-    height: 400px;
 }
 
 #section_4 {
@@ -252,7 +246,6 @@ h3 {
 
 #sectionBody_4 {
     display: none;
-    height: 400px;
 }
 
 .section {
@@ -272,9 +265,78 @@ h3 {
     text-align: center;
 }
 
-#textoCinePeli {
-    text-align: center;
-    padding-top: 20px;
+#sesiones {
+    width: 98%;
+    height: auto;
+    margin-left: 1%;
+    margin-top: 1%;
+    float: left;
+    margin-bottom: 1%;
+    border-radius: 5px;
+    display: none;
+}
+
+#sesiones table {
+    width: 100%;
+    cursor: pointer;
+}
+
+#sesiones table tr td {
+    border-radius: 3px;
+}
+
+#sesiones tr td:nth-child(even) {
+    background-color: transparent;
+    color: black;
+}
+
+#sesiones tr td:nth-child(odd) {
+    background-color: #5c99bc;
+    color: black;
+}
+
+#sesiones tr th {
+    background-color: #002b55;
+    color: white;
+    font-weight: normal;
+    border-radius: 3px;
+}
+
+#scroll_section {
+    width: 98%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
+
+.box2 {
+    width: 40%;
+    float: left;
+    margin-left: 7%; 
+}
+.scroll_box {
+    width: 100%;
+    height: 150px;
+    margin-top: 5px;
+    border:1px solid #ccc;
+    overflow: auto;
+    float: left;
+    cursor: pointer;
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 5px:
+}
+
+li {
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.scroll_box ul li:hover{
+    background-color: #fbb900;
 }
 
 #paymentOptions {
@@ -410,40 +472,40 @@ footer, .footer {
 }
 
 #logo_footer {
-  height: 60px;
-  width: auto;
+    height: 60px;
+    width: auto;
 }
 
 .redes_footer {
-  float: left;
-  margin-top: 140px;
-  margin-left: -290px;
+    float: left;
+    margin-top: 140px;
+    margin-left: -290px;
 }
 
 .list_footer {
-  list-style-type: none;
-  margin: 2px;
-  margin-left: 50px;
-  font-size: 11px;
-  padding: 0;
-  width: 150px;
+    list-style-type: none;
+    margin: 2px;
+    margin-left: 50px;
+    font-size: 11px;
+    padding: 0;
+    width: 150px;
 }
 
 .enlace_footer {
-  text-decoration: none;
-  color: #ffffff;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .tarjeta_footer {
-  width: 140px;
-  float: left;
-  margin-right: 30px;
+    width: 140px;
+    float: left;
+    margin-right: 30px;
 }
 
 .venta_tfno {
-  float: right;
-  margin-right: 50px;
-   font-size: 11px;
+    float: right;
+    margin-right: 50px;
+    font-size: 11px;
 }
 
 
@@ -558,8 +620,7 @@ span.seatCharts-legendDescription {
     width: 200px;
 }
 
-#selected-seats li{
-    
+#selected-seats li{  
     float: left;
     width: 72px;
     height: 26px;
@@ -571,85 +632,4 @@ span.seatCharts-legendDescription {
     font-weight: bold;
     text-align: center;
     list-style: none;
-} 
-
-#sesiones {
-    width: 98%;
-    height: auto;
-    margin-left: 1%;
-    margin-top: 1%;
-    float: left;
-    margin-bottom: 1%;
-    border-radius: 5px;
-    display: none;
-}
-
-#sesiones table {
-    width: 100%;
-    background-color: transparent;
-}
-
-#sesiones table tr td {
-    border-radius: 3px;
-}
-
-#sesiones tr td:nth-child(even) {
-    background-color: transparent;
-    color: black;
-}
-
-#sesiones tr td:nth-child(odd) {
-    background-color: #5c99bc;
-    color: black;
-}
-
-#sesiones tr th {
-    background-color: #002b55;
-    color: white;
-    font-weight: normal;
-    border-radius: 3px;
-}
-
-#scroll_section {
-    height: auto;
-    width: 98%;
-    margin-left: 1%;
-    margin-bottom: 1%;
-}
-
-.box2 {
-    height: auto;
-    width: 40%;
-    float: left;
-    margin-left: 7%; 
-}
-.scroll_box {
-    width: 100%;
-    height: 150px;
-    margin-top: 5px;
-    border:1px solid #ccc;
-    overflow: auto;
-    float: left;
-    cursor: pointer;
-}
-
-ul {
-    text-decoration: none;
-    list-style-type: none;
-    padding: 0;
-    margin-top: 5px:
-}
-li {
-    text-decoration: none;
-    margin-left: 10px;
-}
-
-.scroll_box ul li:hover{
-    background-color: #fbb900;
-}
-
-#dia {
-    width: 100%;
-    height: auto;
-    float: left;
 }

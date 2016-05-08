@@ -3,6 +3,9 @@
 */
 
 var price = 10;
+var current;
+var current2;
+var current3;
 
 $(document).ready(function() {
     
@@ -219,7 +222,6 @@ function paypal(){
     informationBox.css("visibility", "hidden");
 }
 
-var current;
 
 function highlite(el){
 	if (current != null){
@@ -232,7 +234,6 @@ function highlite(el){
     show();
 }
 
-var current2;
 
 function highliteB(el){
 	if (current2 != null){
@@ -245,13 +246,27 @@ function highliteB(el){
     show();
 }
 
+
+function highliteC(el){
+	if (current3 != null){
+		current3.className = "";
+        current3.style.backgroundColor="transparent";
+	}
+	el.className = "highlite";
+    el.style.backgroundColor="#fbb900";
+    current3 = el;
+}
+
+
 function show() {
     if (current != null && current2 != null){
-        document.getElementById("sesiones").style.display="inline-block";
+        $("#sesiones").fadeIn(500);
     }
 }
 
-/*function validarPago() {
+
+/*
+function validarPago() {
     var numero = document.forms["myForm"]["numTarj"].value;
     var titular = document.forms["myForm"]["titTarj"].value;
     var cvv = document.forms["myForm"]["cvv"].value;
@@ -263,4 +278,5 @@ function show() {
         }
     else{
         nextSection(3);
-    }*/
+    }
+*/

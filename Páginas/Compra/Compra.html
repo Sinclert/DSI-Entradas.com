@@ -73,31 +73,84 @@
                 </div>
 
                 <div id="sectionBody_1" class="sectionBody">
-                    <div id="textoCinePeli">Kinépolis  -  Película: Los Vengadores: Civil War</div>
-                    <form id="primerpaso" accept-charset="utf-8" action="enconstruccion.html">
-                        <br>
-                        <label id="lcine">Cine:
-                        </label>
-                        <select id="cine">
-                            <option selected="selected" value="kinepolis">Kinépolis</option>
-                            <option value="cinesa">Cinesa</option>
-                            <option value="equinoccio">Equinoccio</option>
-                        </select>
-                        <label id="ldia">Día:
-                        </label>
-                        <input id="datepicker"/>
-                        <label id="lsesion">Sesión:
-                        </label>
-                        <select id="sesion">
-                            <option selected="selected" value="seleccionarsesion">Seleccionar Sesión</option>
-                            <option value="15:50">15:50</option>
-                            <option value="17:00">17:00</option>
-                            <option value="19:00">19:00</option>
-                            <option value="20:30">20:30</option>
-                            <option value="22:00">22:00</option>
-                        </select>
-                        <br>
-                    </form>
+                                <div id="scroll_section">
+                <div class="box2">
+                    <h3>Localidad</h3>
+                    <hr>
+                    <div class="scroll_box" style="margin-bottom:3%;">
+                        <ul>
+                            <li><div onclick="highlite(this)">Madrid</div></li>
+                            <li><div onclick="highlite(this)">Rivas Vaciamadrid</div></li>
+                            <li><div onclick="highlite(this)">San Martín</div></li>
+                            <li><div onclick="highlite(this)">Villalba</div></li>
+                            <li><div onclick="highlite(this)">Humanes</div></li>
+                            <li><div onclick="highlite(this)">Majadahonda</div></li>
+                            <li><div onclick="highlite(this)">Leganés</div></li>
+                            <li><div onclick="highlite(this)">Las Rozas</div></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box2">
+                    <h3>Cine</h3>
+                    <hr>
+                    <div class="scroll_box" style="margin-bottom:3%;">
+                        <ul>
+                            <li><div onclick="highliteB(this)">Yelmo</div></li>
+                            <li><div onclick="highliteB(this)">Cinesa</div></li>
+                            <li><div onclick="highliteB(this)">Renoir</div></li>
+                            <li><div onclick="highliteB(this)">Golem</div></li>
+                            <li><div onclick="highliteB(this)">Kinépolis</div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id=dia>
+                <h3>Seleccionar Día</h3>
+                <hr>
+                <p> cosita guay de seleccionar día</p>
+            </div>
+            <div id="sesiones">
+                <h3>Sesiones</h3>
+                <hr style="width:98%; padding:0; margin-left:1%;">
+                <table>
+                    <tr>
+                        <th>Lunes</th>
+                        <th>Martes</th> 
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sábado</th>
+                        <th>Domingo</th>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td><a href="../Compra/Compra.html">13:40</a></td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td><a href="../Compra/Compra.html">16:40</a></td> 
+                        <td><a href="../Compra/Compra.html">14:40</a></td>
+                        <td><a href="../Compra/Compra.html">15:40</a></td>
+                        <td><a href="../Compra/Compra.html">14:40</a></td>
+                        <td><a href="../Compra/Compra.html">13:40</a></td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../Compra/Compra.html">23:00</a></td>
+                        <td><a href="../Compra/Compra.html">16:40</a></td> 
+                        <td><a href="../Compra/Compra.html">14:40</a></td>
+                        <td><a href="../Compra/Compra.html">15:40</a></td>
+                        <td><a href="../Compra/Compra.html">14:40</a></td>
+                        <td><a href="../Compra/Compra.html">13:40</a></td>
+                        <td><a href="../Compra/Compra.html">20:30</a></td>
+                    </tr>
+                </table>
+            </div>
                     <button class="btn1" onclick="nextSection(1)">Continuar</button>
                 </div>
             </div>

@@ -264,19 +264,26 @@ function show() {
     }
 }
 
+<<<<<<< HEAD
 
 /*
+=======
+>>>>>>> origin/master
 function validarPago() {
     var numero = document.forms["myForm"]["numTarj"].value;
     var titular = document.forms["myForm"]["titTarj"].value;
     var cvv = document.forms["myForm"]["cvv"].value;
-    var fecha = document.forms["myForm"]["fecCad"].value;
+    
 
-    if (numero == null || numero == ""|| titular == null|| titular == ""|| cvv == null|| cvv == ""|| fecha == null|| fecha == "") {
+    if (numero == null || numero == ""|| titular == null|| titular == ""|| cvv == null|| cvv == "") {
         alert("Toda la información debe ser rellenada");
         return false;
         }
     else{
         nextSection(3);
     }
+<<<<<<< HEAD
 */
+=======
+}
+>>>>>>> origin/master

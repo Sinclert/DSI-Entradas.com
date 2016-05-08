@@ -205,6 +205,7 @@
                         </div>
                     
                         <div id ="paymentInformation">
+                            <form name="myForm">
                             <div class="paymentBox">
                                 Número de tarjeta <input type="text" name="numTarj" value=""/>
                             </div>
@@ -214,15 +215,38 @@
                             </div>
                             
                             <div class="paymentBox">
-                                CVV <input type="text" name="cvv" value=""/>
+                                CVV <input type="text" name="cvv" value="" maxlength="4"/>
                             </div>
                             
                             <div class="paymentBox">
-                                Fecha caducidad <input type="text" name="fecCad" value=""/>
+                                Fecha caducidad: 
+                                <select id="month">
+                                <option>Enero</option>
+                                <option>Febrero</option>
+                                <option>Marzo</option>
+                                <option>Abril</option>
+                                <option>Mayo</option>
+                                <option>Junio</option>
+                                <option>Julio</option>
+                                <option>Agosto</option>
+                                <option>Septiembre</option>
+                                <option>Octubre</option>
+                                <option>Noviembre</option>
+                                <option>Diciembre</option>
+                                </select> Año <select id="year">
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                            </select><br>
                             </div>
+                            </form>
                         </div>
                      
-                    <button class="btn1" onclick="nextSection(3)">Continuar</button>
+                    <button class="btn1" onclick="validarPago()">Continuar</button>
                 </div>
             </div>
             

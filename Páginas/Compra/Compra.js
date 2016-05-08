@@ -218,3 +218,17 @@ function paypal(){
     var informationBox = $("#paymentInformation");
     informationBox.css("visibility", "hidden");
 }
+
+/*function validarPago() {
+    var numero = document.forms["myForm"]["numTarj"].value;
+    var titular = document.forms["myForm"]["titTarj"].value;
+    var cvv = document.forms["myForm"]["cvv"].value;
+    var fecha = document.forms["myForm"]["fecCad"].value;
+
+    if (numero == null || numero == ""|| titular == null|| titular == ""|| cvv == null|| cvv == ""|| fecha == null|| fecha == "") {
+        alert("Toda la información debe ser rellenada");
+        return false;
+        }
+    else{
+        nextSection(3);
+    }*/

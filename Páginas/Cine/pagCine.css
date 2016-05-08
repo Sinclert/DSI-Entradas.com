@@ -177,11 +177,22 @@ hr {
 	margin-left: 1%;
 }
 
-#sinopsis {
+#location {
 	float: left;
 	width: 50%;
 	margin-left: 1%;
 	text-align: justify;
+}
+
+#location p {
+    text-align: center;
+}
+
+#googleMap {
+    width: 400px;
+    height: 280px;
+    margin-left: 50px;
+    margin-bottom: 10px;
 }
 
 p {
@@ -389,11 +400,6 @@ input[type="password"], input[type="email"], input[type="text"] {
 
 .btn2:hover {
     background-color:#476e9e;
-}
-
-#end {
-	float: left;
-	width: 98%;
 }
 
 footer, .footer {

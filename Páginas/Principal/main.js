@@ -9,6 +9,9 @@ $(document).ready(function () {
             $("#header").css("filter", "none");
             $("#menu").css("filter", "none");
             $("#cuerpo").css("filter", "none");
+            $("#header").css("-webkit-filter", "none");
+            $("#menu").css("-webkit-filter", "none");
+            $("#cuerpo").css("-webkit-filter", "none");
         }
 
         if (!register.is(e.target) && register.has(e.target).length == 0 && register.is(":visible")){
@@ -16,6 +19,9 @@ $(document).ready(function () {
             $("#header").css("filter", "none");
             $("#menu").css("filter", "none");
             $("#cuerpo").css("filter", "none");
+            $("#header").css("-webkit-filter", "none");
+            $("#menu").css("-webkit-filter", "none");
+            $("#cuerpo").css("-webkit-filter", "none");
         }
 
     });
@@ -26,7 +32,7 @@ $(document).ready(function () {
     var slides = $(".slider div");				//slide which is in the div at the moment
     var nslides = slides.length;				//number of total slides
 
-    function slideCraigslist() {					//This function will identify the index, to create a different animation for
+    function slideEntradas() {					//This function will identify the index, to create a different animation for
          var slide = $('.slider div').eq(index);		//each slide.
          var dots = document.getElementsByClassName("dot");								 //"slide" is the following slide in the div
              slides.hide();
@@ -34,14 +40,14 @@ $(document).ready(function () {
              dots[lastIndex].classList.remove("active");
              dots[index].classList.add("active");
     }
-    window.onload = slideCraigslist();
+    window.onload = slideEntradas();
     var automatic = setInterval(function() {		//This function makes the slides pass automaticalle each 5 seconds
         lastIndex = index;
         index = index + 1;							//In case the index is higher than the amount of slides -1, it will start again from 0
         if (index > nslides - 1) {
             index = 0;
         }
-        slideCraigslist();
+        slideEntradas();
     }, 5000);
 
     $('#arrowright').click(function() {				//Passes slides manually by clicking right arrow.
@@ -51,14 +57,14 @@ $(document).ready(function () {
         if (index > nslides - 1) {
             index = 0;
         }
-        slideCraigslist();
+        slideEntradas();
         automatic = setInterval(function() {		    //This function makes the slides pass automaticalle each 5 seconds
             lastIndex = index;
             index = index + 1;							//In case the index is higher than the amount of slides -1, it will start again from 0
             if (index > nslides - 1) {
                     index = 0;
             }
-            slideCraigslist();
+            slideEntradas();
             }, 5000);
     });
 
@@ -69,14 +75,14 @@ $(document).ready(function () {
         if (index < 0) {
             index = nslides - 1;
         }
-        slideCraigslist();
+        slideEntradas();
         automatic = setInterval(function() {		    //This function makes the slides pass automaticalle each 5 seconds
             lastIndex = index;
             index = index + 1;							//In case the index is higher than the amount of slides -1, it will start again from 0
             if (index > nslides - 1) {
                     index = 0;
             }
-            slideCraigslist();
+            slideEntradas();
             }, 5000);
     });
 
@@ -87,14 +93,14 @@ function currentSlide(n) {
     clearInterval(automatic);
     lastIndex = index;
     index = n-1;
-    slideCraigslist();
+    slideEntradas();
     automatic = setInterval(function() {		    // This function makes the slides pass automaticalle each 5 seconds
         lastIndex = index;
         index = index + 1;							// In case the index is higher than the amount of slides -1, it will start again from 0
         if (index > nslides - 1) {
                 index = 0;
         }
-        slideCraigslist();
+        slideEntradas();
         }, 5000);
 }
 
@@ -104,6 +110,9 @@ function show_login() {
     $("#header").css("filter", "blur(5px)");
     $("#menu").css("filter", "blur(5px)");
     $("#cuerpo").css("filter", "blur(5px)");
+    $("#header").css("-webkit-filter", "blur(5px)");
+    $("#menu").css("-webkit-filter", "blur(5px)");
+    $("#cuerpo").css("-webkit-filter", "blur(5px)");
 }
 
 function show_register() {
@@ -112,6 +121,9 @@ function show_register() {
     $("#header").css("filter", "blur(5px)");
     $("#menu").css("filter", "blur(5px)");
     $("#cuerpo").css("filter", "blur(5px)");
+    $("#header").css("-webkit-filter", "blur(5px)");
+    $("#menu").css("-webkit-filter", "blur(5px)");
+    $("#cuerpo").css("-webkit-filter", "blur(5px)");
 }
 
 

@@ -95,9 +95,8 @@ $(document).ready(function() {
 		
 });
 
-
+var total = 0;
 function recalculateTotal(sc) {
-	var total = 0;
 	sc.find('selected').each(function () {
 		total += price;
 	});
@@ -278,3 +277,13 @@ function validarPago() {
         nextSection(3);
     }
 }
+
+/*function validarButacas() {
+    if(total== 0){
+        alert("Debe elegir butacas antes de continuar");
+        return false;
+    }
+    else{
+        nextSection(2);
+    }
+}*/

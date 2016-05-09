@@ -32,12 +32,12 @@ $(document).ready(function() {
     
     /* SEATS SELECTION JAVASCRIPT */
     
-	var $cart = $('#selected-seats'), //Sitting Area
-	$counter = $('#counter'), //Votes
-	$total = $('#total'); //Total money
+	var $cart = $('#selected-seats'), // Sitting Area
+	$counter = $('#counter'), // Votes
+	$total = $('#total'); // Total money
 	
 	var sc = $('#seat-map').seatCharts({
-		map: [  //Seating chart
+		map: [  // Seating chart
 			'aaaaaaaaaa',
             'aaaaaaaaaa',
             '__________',
@@ -62,9 +62,11 @@ $(document).ready(function() {
 				[ 'a', 'unavailable', 'Vendida']
 			]					
 		},
-		click: function () { //Click event
-			if (this.status() == 'available') { //optional seat
-				$('<li>R'+(this.settings.row+1)+' S'+this.settings.label+'</li>')
+        
+		click: function () { // Click event
+            
+			if (this.status() == 'available') {
+				$('<li>F'+(this.settings.row+1)+' B'+this.settings.label+'</li>')
 					.attr('id', 'cart-item-'+this.settings.id)
 					.data('seatId', this.settings.id)
 					.appendTo($cart);
@@ -73,30 +75,32 @@ $(document).ready(function() {
 				$total.text(recalculateTotal(sc)+price);
 							
 				return 'selected';
-			} else if (this.status() == 'selected') { //Checked
-					//Update Number
+			}
+            else if (this.status() == 'selected') {
 					$counter.text(sc.find('selected').length-1);
-					//update totalnum
 					$total.text(recalculateTotal(sc)-price);
 						
 					//Delete reservation
 					$('#cart-item-'+this.settings.id).remove();
-					//optional
 					return 'available';
-			} else if (this.status() == 'unavailable') { //sold
+			}
+            else if (this.status() == 'unavailable') { //sold
 				return 'unavailable';
-			} else {
+			}
+            else {
 				return this.style();
 			}
 		}
 	});
-	//sold seat
+    
+	// Sold seat
 	sc.get(['1_2', '4_4','4_5','6_6','6_7','8_5','8_6','8_7','8_8', '10_1', '10_2']).status('unavailable');
 		
 });
 
-var total = 0;
+
 function recalculateTotal(sc) {
+    var total = 0;
 	sc.find('selected').each(function () {
 		total += price;
 	});

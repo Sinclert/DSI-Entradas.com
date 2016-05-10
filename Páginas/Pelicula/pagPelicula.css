@@ -275,6 +275,7 @@ input[type="password"], input[type="email"], input[type="text"] {
     width: 98%;
     margin-left: 1%;
     margin-bottom: 1%;
+    margin-top: 300px;
 }
 
 .box {

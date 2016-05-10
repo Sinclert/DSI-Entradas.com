@@ -146,14 +146,16 @@ hr {
 }
 
 #myProgress {
-    margin: 20px;
-    position: relative;
+    float: left;
+    width: 93%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 3.5%;
     height: 30px;
     background-color: white;
 }
 
 #myBar {
-    position: absolute;
     width: 25%;
     height: 100%;
     background-color: #0d4168;
@@ -198,56 +200,16 @@ h3 {
     background-color:#476e9e;
 }
 
-#section_1 {
-    float: left;
-    width: 98%;
-    margin-top: 1%;
-    margin-left: 1%;
-    border-radius: 5px;
-}
-
 #cine {
     margin-right: 50px;
 }
 
-#section_2 {
-    float: left;
-    width: 98%;
-    margin-top: 1%;
-    margin-left: 1%;
-    border-radius: 5px;
-}
-
-#sectionBody_2 {
-    display: none;
-}
-
-#section_3 {
-    float: left;
-    width: 98%;
-    margin-top: 1%;
-    margin-left: 1%;
-    border-radius: 5px;
-}
-
-#sectionBody_3 {
-    display: none;
-}
-
-#section_4 {
-    float: left;
-    width: 98%;
-    margin-top: 1%;
-    margin-left: 1%;
-    margin-bottom: 2%;
-    border-radius: 5px;
-}
-
-#sectionBody_4 {
-    display: none;
-}
-
 .section {
+    float: left;
+    width: 93%;
+    margin-top: 1%;
+    margin-left: 3.5%;
+    border-radius: 5px;
     display: block;
 }
 
@@ -263,6 +225,23 @@ h3 {
 
 .sectionBody{
     text-align: center;
+}
+
+#sectionBody_2 {
+    display: none;
+}
+
+
+#sectionBody_3 {
+    display: none;
+}
+
+#section_4 {
+    margin-bottom: 2%;
+}
+
+#sectionBody_4 {
+    display: none;
 }
 
 #sesiones {
@@ -371,7 +350,7 @@ li {
 
 #paymentInformation {
     float: right;
-    width: 700px;
+    width: 600px;
     height: 225px;
     margin-top: 10px;
     margin-right: 20px;

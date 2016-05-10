@@ -1,9 +1,11 @@
 /*Done by: DSI PROJECT GROUP NUMBER 4 */
 
-var price = 10;
 var current;
 var current2;
 var current3;
+var price = 10;
+var tickets = 0;
+var totalPrice = 0;
 
 $(document).ready(function() {
     
@@ -79,16 +81,21 @@ $(document).ready(function() {
 
 				$counter.text(sc.find('selected').length+1);
 				$total.text(recalculateTotal(sc)+price);
-							
+				
+                totalPrice = totalPrice + price;
+                tickets++;
 				return 'selected';
 			}
             else if (this.status() == 'selected') {
-					$counter.text(sc.find('selected').length-1);
-					$total.text(recalculateTotal(sc)-price);
+				$counter.text(sc.find('selected').length-1);
+				$total.text(recalculateTotal(sc)-price);
 						
-					//Delete reservation
-					$('#cart-item-'+this.settings.id).remove();
-					return 'available';
+				//Delete reservation
+				$('#cart-item-'+this.settings.id).remove();
+                
+                totalPrice = totalPrice - price;
+                tickets--;
+				return 'available';
 			}
             else if (this.status() == 'unavailable') { //sold
 				return 'unavailable';
@@ -106,12 +113,12 @@ $(document).ready(function() {
 
 
 function recalculateTotal(sc) {
-    var total = 0;
+    totalPrice = 0;
 	sc.find('selected').each(function () {
-		total += price;
+		totalPrice += price;
 	});
-			
-	return total;
+    
+	return totalPrice;
 }
 
 
@@ -176,11 +183,13 @@ function nextSection(n){
     if (n==1){
         $("#sectionBody_1").slideUp(400);
         $("#sectionBody_2").slideDown(400);
+        $("#header1").text("Capitán América " + current2.innerHTML + " " + current.innerHTML + "  " + current3.innerHTML);
     }
     
     if (n==2){
         $("#sectionBody_2").slideUp(400);
         $("#sectionBody_3").slideDown(400);
+        $("#header2").text("Tickets: " + tickets + " Precio: " + totalPrice + " €");
     }
     
     else if(n==3){
@@ -197,6 +206,8 @@ function showSection(n){
         $("#sectionBody_3").slideUp(400);
         $("#sectionBody_4").slideUp(400);
         $("#sectionBody_1").slideDown(400);
+        
+        $("#header2").text("Tickets: " + tickets + " Precio: " + totalPrice + " €");
     }
     
     else if(n==2){
@@ -204,6 +215,8 @@ function showSection(n){
         $("#sectionBody_3").slideUp(400);
         $("#sectionBody_4").slideUp(400);
         $("#sectionBody_2").slideDown(400);
+        
+        $("#header1").text("Capitán América " + current2.innerHTML + " " + current.innerHTML + "  " + current3.innerHTML);
     }
     
     else if(n==3){
@@ -211,24 +224,32 @@ function showSection(n){
         $("#sectionBody_2").slideUp(400);
         $("#sectionBody_4").slideUp(400);
         $("#sectionBody_3").slideDown(400);
+        
+        $("#header1").text("Capitán América " + current2.innerHTML + " " + current.innerHTML + "  " + current3.innerHTML);
+        $("#header2").text("Tickets: " + tickets + " Precio: " + totalPrice + " €");
     }
     
     else if(n==4){
         $("#sectionBody_1").slideUp(400);
         $("#sectionBody_2").slideUp(400);
         $("#sectionBody_3").slideUp(400);
-        $("#sectionBody_4").slideDown(400);   
+        $("#sectionBody_4").slideDown(400);
+        
+        $("#header1").text("Capitán América " + current2.innerHTML + " " + current.innerHTML + "  " + current3.innerHTML);
+        $("#header2").text("Tickets: " + tickets + " Precio: " + totalPrice + " €");
     }
 }
 
 
-function creditCard(){
+function creditCard(method){
+    $("#header3").text("Método de pago: " + method.value);
     var informationBox = $("#paymentInformation");
     informationBox.css("visibility", "visible");
 }
 
 
-function paypal(){
+function paypal(method){
+    $("#header3").text("Método de pago: " + method.value);
     window.open("https://www.paypal.com/signin/", "blank");
     var informationBox = $("#paymentInformation");
     informationBox.css("visibility", "hidden", 400);
@@ -287,8 +308,8 @@ function validarPago() {
     if (numero == null || numero == ""|| titular == null|| titular == ""|| cvv == null|| cvv == "") {
         alert("Toda la información debe ser rellenada");
         return false;
-        }
-    else{
+    }
+    else {
         nextSection(3);
     }
 }

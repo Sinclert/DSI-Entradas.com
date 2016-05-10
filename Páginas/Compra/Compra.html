@@ -68,7 +68,7 @@
             </div>
 
             <div id="section_1" class="section">
-                <div class="sectionHeader" onclick="showSection(1)">
+                <div class="sectionHeader" id="header1" onclick="showSection(1)">
                     Seleccione cine y sesión
                 </div>
 
@@ -152,7 +152,7 @@
             </div>
 
             <div id="section_2" class="section">
-                <div class="sectionHeader" onclick="showSection(2)">
+                <div class="sectionHeader" id="header2" onclick="showSection(2)">
                     Seleccione sus butacas
                 </div>
 
@@ -179,22 +179,22 @@
             </div>
 
             <div id="section_3" class="section">
-                <div class="sectionHeader" onclick="showSection(3)">
+                <div class="sectionHeader" id="header3" onclick="showSection(3)">
                     Seleccione método de pago
                 </div>
 
                 <div id="sectionBody_3" class="sectionBody">
                     <form id = "paymentOptions">
                         <div class= "paymentOption">
-                            <input  type="radio" name="payment" onclick = "creditCard()" value="mastercard"> Mastercard
+                            <input  type="radio" name="payment" onclick = "creditCard(this)" value="Mastercard"> Mastercard
                         </div>
                         
                         <div class= "paymentOption">
-                            <input  type="radio" name="payment" onclick = "creditCard()" value="visa"> Visa
+                            <input  type="radio" name="payment" onclick = "creditCard(this)" value="Visa"> Visa
                         </div>
                         
                         <div class= "paymentOption">
-                            <input  type="radio" name="payment" onclick = "paypal()" value="paypal"> Paypal
+                            <input  type="radio" name="payment" onclick = "paypal(this)" value="Paypal"> Paypal
                         </div>
                         
                     </form>

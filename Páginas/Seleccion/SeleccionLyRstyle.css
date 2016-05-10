@@ -1,7 +1,7 @@
 body {
 	margin-top:-20px;
 	font-family: "Verdana";
-	background-image: url("images/background2.png");
+	background-image: url("images/background1.png");
 	height: 900px;
 	margin-left: auto;
 	margin-right: auto;
@@ -16,6 +16,7 @@ body {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	border-radius: 0.5em;
 }
 
 .bienvenida {

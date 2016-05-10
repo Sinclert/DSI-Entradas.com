@@ -174,18 +174,18 @@ function nextSection(n){
     }
     
     if (n==1){
-        $("#sectionBody_1").hide(400);
-        $("#sectionBody_2").show(400);
+        $("#sectionBody_1").slideUp(400);
+        $("#sectionBody_2").slideDown(400);
     }
     
     if (n==2){
-        $("#sectionBody_2").hide(400);
-        $("#sectionBody_3").show(400);
+        $("#sectionBody_2").slideUp(400);
+        $("#sectionBody_3").slideDown(400);
     }
     
     else if(n==3){
-        $("#sectionBody_3").hide(400);
-        $("#sectionBody_4").show(400);
+        $("#sectionBody_3").slideUp(400);
+        $("#sectionBody_4").slideDown(400);
     }
 }
 
@@ -193,31 +193,31 @@ function nextSection(n){
 function showSection(n){
     
     if (n==1){
-        $("#sectionBody_2").hide(400);
-        $("#sectionBody_3").hide(400);
-        $("#sectionBody_4").hide(400);
-        $("#sectionBody_1").show(400);
+        $("#sectionBody_2").slideUp(400);
+        $("#sectionBody_3").slideUp(400);
+        $("#sectionBody_4").slideUp(400);
+        $("#sectionBody_1").slideDown(400);
     }
     
     else if(n==2){
-        $("#sectionBody_1").hide(400);
-        $("#sectionBody_3").hide(400);
-        $("#sectionBody_4").hide(400);
-        $("#sectionBody_2").show(400);
+        $("#sectionBody_1").slideUp(400);
+        $("#sectionBody_3").slideUp(400);
+        $("#sectionBody_4").slideUp(400);
+        $("#sectionBody_2").slideDown(400);
     }
     
     else if(n==3){
-        $("#sectionBody_1").hide(400);
-        $("#sectionBody_2").hide(400);
-        $("#sectionBody_4").hide(400);
-        $("#sectionBody_3").show(400);
+        $("#sectionBody_1").slideUp(400);
+        $("#sectionBody_2").slideUp(400);
+        $("#sectionBody_4").slideUp(400);
+        $("#sectionBody_3").slideDown(400);
     }
     
     else if(n==4){
-        $("#sectionBody_1").hide(400);
-        $("#sectionBody_2").hide(400);
-        $("#sectionBody_3").hide(400);
-        $("#sectionBody_4").show(400);   
+        $("#sectionBody_1").slideUp(400);
+        $("#sectionBody_2").slideUp(400);
+        $("#sectionBody_3").slideUp(400);
+        $("#sectionBody_4").slideDown(400);   
     }
 }
 

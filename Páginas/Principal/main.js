@@ -27,40 +27,40 @@ $(document).ready(function () {
     });
 
 
-    var index = 0;								//index to determine the number of the slide which appears
+    var index = 0;
     var lastIndex = 0;
-    var slides = $(".slider div");				//slide which is in the div at the moment
-    var nslides = slides.length;				//number of total slides
+    var slides = $(".slider div");
+    var nslides = slides.length;
 
-    function slideEntradas() {					//This function will identify the index, to create a different animation for
-         var slide = $('.slider div').eq(index);		//each slide.
-         var dots = document.getElementsByClassName("dot");								 //"slide" is the following slide in the div
+    function slideEntradas() {
+         var slide = $('.slider div').eq(index);
+         var dots = document.getElementsByClassName("dot");
              slides.hide();
              slide.fadeIn("slow");
              dots[lastIndex].classList.remove("active");
              dots[index].classList.add("active");
     }
     window.onload = slideEntradas();
-    var automatic = setInterval(function() {		//This function makes the slides pass automaticalle each 5 seconds
-        lastIndex = index;
-        index = index + 1;							//In case the index is higher than the amount of slides -1, it will start again from 0
-        if (index > nslides - 1) {
-            index = 0;
-        }
-        slideEntradas();
-    }, 5000);
-
-    $('#arrowright').click(function() {				//Passes slides manually by clicking right arrow.
-        clearInterval(automatic);						//In case the index is higher than the amount of slides -1, it will start again from 0
+    var automatic = setInterval(function() {
         lastIndex = index;
         index = index + 1;
         if (index > nslides - 1) {
             index = 0;
         }
         slideEntradas();
-        automatic = setInterval(function() {		    //This function makes the slides pass automaticalle each 5 seconds
+    }, 5000);
+
+    $('#arrowright').click(function() {
+        clearInterval(automatic);
+        lastIndex = index;
+        index = index + 1;
+        if (index > nslides - 1) {
+            index = 0;
+        }
+        slideEntradas();
+        automatic = setInterval(function() {
             lastIndex = index;
-            index = index + 1;							//In case the index is higher than the amount of slides -1, it will start again from 0
+            index = index + 1;
             if (index > nslides - 1) {
                     index = 0;
             }
@@ -68,17 +68,17 @@ $(document).ready(function () {
             }, 5000);
     });
 
-    $('#arrowleft').click(function() {				//Passes slides manually by clicking left arrow.
-        clearInterval(automatic);						//In case the index is lower than 0, it will start again from the last slide
+    $('#arrowleft').click(function() {
+        clearInterval(automatic);
         lastIndex = index;
         index = index - 1;
         if (index < 0) {
             index = nslides - 1;
         }
         slideEntradas();
-        automatic = setInterval(function() {		    //This function makes the slides pass automaticalle each 5 seconds
+        automatic = setInterval(function() {
             lastIndex = index;
-            index = index + 1;							//In case the index is higher than the amount of slides -1, it will start again from 0
+            index = index + 1;
             if (index > nslides - 1) {
                     index = 0;
             }
@@ -94,9 +94,9 @@ function currentSlide(n) {
     lastIndex = index;
     index = n-1;
     slideEntradas();
-    automatic = setInterval(function() {		    // This function makes the slides pass automaticalle each 5 seconds
+    automatic = setInterval(function() {
         lastIndex = index;
-        index = index + 1;							// In case the index is higher than the amount of slides -1, it will start again from 0
+        index = index + 1;
         if (index > nslides - 1) {
                 index = 0;
         }

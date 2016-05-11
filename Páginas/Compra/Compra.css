@@ -156,7 +156,7 @@ hr {
 }
 
 #myBar {
-    width: 0%;
+    width: 25%;
     height: 100%;
     background-color: #0d4168;
 }
@@ -227,7 +227,7 @@ h3 {
     text-align: center;
 }
 
-#sectionBody_2 {
+#sectionBody_1 {
     display: none;
 }
 
@@ -279,19 +279,17 @@ h3 {
     color: white;
     font-weight: normal;
     border-radius: 3px;
-    width: 14%;
+    width: 15%;
 }
 
-.nombre_dia{
-    margin-top: -1px;
-    margin-bottom: -1px;
-    font-size: 15px;
+.nombre_dia {
+    margin: 0px;
+    font-size: 14px;
 }
 
-.fecha_dia{
-    font-size: 12px;
-    margin-top: -1px;
-    margin-bottom: -1px;
+.fecha_dia {
+    margin: 0px;
+    font-size: 10px;
 }
 
 #scroll_section {
